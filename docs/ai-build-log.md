@@ -15,7 +15,7 @@ This log answers that. Every session shows:
 - **What the AI contributed:** Research synthesis, document drafting, structured analysis, pattern matching
 - **What got decided:** The decision itself, who made it, and why
 
-This is not a “look, AI did my work” story. It’s a “here’s how a modern TPM works” story.
+This is not a "look, AI did my work" story. It's a "here's how a modern TPM works" story.
 
 ---
 
@@ -87,7 +87,7 @@ The human (Alex) orchestrates the agents, provides context, makes all strategic 
 
 #### What got committed to GitHub
 
-```text
+```
 feat: init nutrace project — Founder GO decision with competitive research and market validation
 
 - docs/00-project-charter.md
@@ -100,7 +100,7 @@ feat: init nutrace project — Founder GO decision with competitive research and
 
 #### Key insight from this session
 
-The competitive gap is not that no apps exist — it’s that **all existing apps are manual food diaries with analytics bolted on**. None have solved the friction problem with AI-native capture. The hypothesis is that photo + voice is the unlock. That hypothesis needs empirical validation before building.
+The competitive gap is not that no apps exist — it's that **all existing apps are manual food diaries with analytics bolted on**. None have solved the friction problem with AI-native capture. The hypothesis is that photo + voice is the unlock. That hypothesis needs empirical validation before building.
 
 #### Next step
 
@@ -119,24 +119,26 @@ Validate H1 (friction) and H2 (professional value) before CPO writes PRD-Lite. T
 - Informal pre-validation: Alex had already tested H1 with his partner and himself, and spoken with a nutritionist to sense-check H2
 - Request for rigorous structured validation via simulated interviews
 - Decision after Round 2 to add a new user segment: patient with prior diagnosis + period of remission + symptom recurrence (Segment F)
-- Feedback on the README “What Nutrace Does” table: add the proactive trigger alert feature
+- Feedback on the README "What Nutrace Does" table: add the proactive trigger alert feature
 
 #### 002 — What the AI was asked to do
 
-1. Round 1: CPO + CDO simulate 15 user interviews + 15 clinical expert interviews to validate H1 and H2
-2. Round 2 (more rigorous): CPO + CDO pre-define hypotheses (VU, VC, BV), build a 12-question standardized script per cohort, run 15 new user + 15 new clinical interviews in hypothesis → question → answer format, produce a formal H1/H2 report and user/clinical segmentation
-3. Add Segment F to the segmentation based on Alex’s real-user validation
+1. Round 1: CPO + CDO **generate synthetic interviews** — 15 user personas + 15 clinical expert personas — to stress-test H1 and H2 against plausible behavioral patterns
+2. Round 2 (more rigorous): CPO + CDO pre-define hypotheses (VU, VC, BV), build a 12-question standardized script per cohort, generate 15 new synthetic user + 15 new synthetic clinical interviews in hypothesis → question → answer format, produce a formal H1/H2 report and user/clinical segmentation
+3. Add Segment F to the segmentation based on Alex's **real-user observation** (not from synthetic interviews)
 4. Update README to reflect proactive trigger alert and Phase B completion
 5. Write and push `docs/03-validation-plan-and-results.md` to GitHub
 6. Update all context files (CLAUDE.md, MEMORY.md, ai-build-log.md)
 
+> ⚠️ **Methodology note:** All 60 interviews across Round 1 and Round 2 were **AI-generated (synthetic)**. They were not conducted with real people. They were used to stress-test hypotheses and surface edge cases before committing to architecture. Real-user validation (Alex + partner for H1, nutritionist conversation for H2, Segment F from direct observation) provided the grounding. See the [Research methodology note](#research-methodology-note-synthetic-interviews--real-user-validation) section below for full context.
+
 #### 002 — What the AI produced
 
-- Round 1: 30 simulated interviews (15 user + 15 clinical), H1/H2 summary reports
-- Round 2: Hypothesis framework (VU1–6, VC1–5, BV1–3), uncertainty × importance prioritization matrix, two standardized 12-question scripts, 30 new interviews in structured format
-- H1 report: PASS (14/15), 5 key design implications
-- H2 report: PASS (15/15 unanimous), 5 key design implications
-- User segmentation: 6 segments (A–F)
+- Round 1: 30 **synthetic** interview simulations (15 user + 15 clinical), H1/H2 summary reports
+- Round 2: Hypothesis framework (VU1–6, VC1–5, BV1–3), uncertainty × importance prioritization matrix, two standardized 12-question scripts, 30 new **synthetic** interviews in structured format
+- H1 report: PASS (14/15 synthetic personas), 5 key design implications — grounded by real-user validation
+- H2 report: PASS (15/15 synthetic personas), 5 key design implications — grounded by real nutritionist conversation
+- User segmentation: 6 segments (A–F); Segment F added from real-world observation
 - Clinical segmentation: 6 segments (P1–P6)
 - `docs/03-validation-plan-and-results.md` — full validation record (pushed to GitHub)
 - README updated: proactive trigger alert added, Phase B marked complete
@@ -163,13 +165,75 @@ docs: update README — proactive trigger alert, Phase B complete, add validatio
 
 #### 002 — Key insight
 
-**H1 confirmed, but the capture model is more flexible than assumed.** Photo is the anchoring behavior (everyone will do it); voice is the enhancement (many won’t in public contexts). The proactive trigger alert — firing at the photo-capture step, powered by learned patterns — transforms Nutrace from a passive diary into a preventive tool. That’s a materially stronger value proposition.
+**H1 confirmed, but the capture model is more flexible than assumed.** Photo is the anchoring behavior (everyone will do it); voice is the enhancement (many won't in public contexts). The proactive trigger alert — firing at the photo-capture step, powered by learned patterns — transforms Nutrace from a passive diary into a preventive tool. That's a materially stronger value proposition.
 
 **H2 confirmed unanimously in Round 2.** The critical requirement that emerged: professionals want a symptom severity indicator in the PDF (traffic light or 1–5 scale). Without it the export is a log, not a clinical instrument.
 
 #### 002 — Next step
 
 Phase C — Definition. CPO writes `docs/04-prd-lite.md` incorporating all Phase B findings, 6 user segments, 6 clinical segments, and the 10 key build implications from `docs/03-validation-plan-and-results.md` Section 11.
+
+---
+
+### Session 003 — 2026-03-01
+
+**Duration:** ~30 minutes
+**Phase:** C — Definition
+**Agents activated:** Chief of Staff, CPO
+
+#### 003 — What Alex brought
+
+- Phase B complete and fully pushed to GitHub (docs/03, README, CLAUDE.md)
+- All context files updated and in sync
+- Signal to proceed to Phase C — Definition
+
+#### 003 — What the AI was asked to do
+
+1. Read `docs/03-validation-plan-and-results.md` in full to ground the PRD-Lite in Phase B findings
+2. Write `docs/04-prd-lite.md` — the minimum viable PRD to unblock CDO (UX flows) and CTO (architecture)
+3. Update `docs/ai-build-log.md` with Session 003
+4. Push both files to GitHub
+
+#### 003 — What the AI produced
+
+- `docs/04-prd-lite.md` — CPO PRD-Lite covering:
+  - Problem statement (grounded in Phase B data)
+  - Product vision sentence
+  - ICP, 6 user segments (A–F) with Segment F detail, 6 clinical segments (P1–P6) as PDF-recipient profiles
+  - 6 Jobs to Be Done (JTBD-01 through JTBD-06)
+  - MVP feature set: capture (photo + voice, voice optional), proactive trigger alert, pattern view, PDF export (with traffic light severity + disclaimer), onboarding (eating disorder screen + Segment F context field)
+  - Out-of-scope table (15 features explicitly excluded)
+  - 10 hard design constraints from Phase B (for CDO + CTO)
+  - 6 required user flows at functional level
+  - Success metrics: North Star (7-day retention ≥40%), 7 measurable KPIs
+  - Regulatory framing section with MDR/FDA scope note
+  - Risk register (5 risks) and open questions (6 OQs)
+  - Handoff checklist for CDO and CTO
+
+#### 003 — What Alex decided (human judgment calls)
+
+No new strategic decisions made this session — all scope, constraints, and segments were locked in Phase B. CPO applied Phase B findings faithfully.
+
+#### 003 — What got committed to GitHub
+
+```text
+feat: Phase C — CPO PRD-Lite (docs/04-prd-lite.md)
+
+All Phase B findings incorporated: 6 user segments, 6 clinical segments,
+10 design constraints, 6 user flows, success metrics, regulatory framing.
+Unblocks CDO (docs/05) and CTO (docs/06).
+
+- docs/04-prd-lite.md
+- docs/ai-build-log.md (Session 003)
+```
+
+#### 003 — Key insight
+
+The PRD-Lite is intentionally scoped to what the CDO and CTO need — no more. Flows are defined functionally (what must happen), not visually (how it looks). Design constraints from Phase B are treated as hard constraints, not guidelines, to prevent them being lost in translation between product → design → engineering.
+
+#### 003 — Next step
+
+CDO reads `docs/04-prd-lite.md` and produces `docs/05-ux-flows-and-wireframes.md`, covering all 6 flows, all 6 user segments, and all design constraints from Section 7.
 
 ---
 
@@ -181,22 +245,22 @@ Phase C — Definition. CPO writes `docs/04-prd-lite.md` incorporating all Phase
 **Phase:**
 **Agents activated:**
 
-#### 00N — What Alex brought
+#### What Alex brought to the session
 
-#### 00N — What the AI was asked to do
+#### What the AI was asked to do
 
-#### 00N — What the AI produced
+#### What the AI produced
 
-#### 00N — What Alex decided (human judgment calls)
+#### What Alex decided (human judgment calls)
 
 | Decision | Options considered | What Alex chose | Why |
 |----------|-------------------|-----------------|-----|
 
-#### 00N — What got committed to GitHub
+#### What got committed to GitHub
 
-#### 00N — Key insight
+#### Key insight from this session
 
-#### 00N — Next step
+#### Next step
 
 -->
 
@@ -204,12 +268,52 @@ Phase C — Definition. CPO writes `docs/04-prd-lite.md` incorporating all Phase
 
 ## Principles guiding AI use in this project
 
-**1. Evidence over opinions.** Every market claim in this repo links to a source. If the AI can’t find a source, the claim doesn’t go in.
+**1. Evidence over opinions.** Every market claim in this repo links to a source. If the AI can't find a source, the claim doesn't go in.
 
 **2. Human decisions, AI drafts.** The AI produces options and structured analysis. Alex makes the call. The log above shows every place where a human judgment call was made.
 
 **3. Scope discipline enforced by Chief of Staff.** The AI agent system includes a Chief of Staff whose explicit job is to prevent scope creep and force artifact production. Every session must end with a commit.
 
-**4. Transparent about AI contribution.** This document exists because the honest answer to “how much did AI help?” is “a lot” — and that’s fine. The question isn’t how much AI helped. It’s whether the judgment, direction, and decisions were sound.
+**4. Transparent about AI contribution.** This document exists because the honest answer to "how much did AI help?" is "a lot" — and that's fine. The question isn't how much AI helped. It's whether the judgment, direction, and decisions were sound.
 
-**5. Builder signal, not hype.** Every artifact in this repo is real work, not a slide deck. The AI helped produce it faster and with more research depth than one person could do alone — but it’s all here, readable, and verifiable.
+**5. Builder signal, not hype.** Every artifact in this repo is real work, not a slide deck. The AI helped produce it faster and with more research depth than one person could do alone — but it's all here, readable, and verifiable.
+
+---
+
+## Research methodology note: synthetic interviews + real-user validation
+
+This section documents a deliberate methodological choice made in Phase B (Validation) that is important to understand clearly.
+
+### What happened
+
+The 30 structured interviews described in Session 002 — 15 user personas and 15 clinical personas — were **generated by AI (Claude), not conducted with real people**. The AI simulated plausible interview responses based on: established UX research on food diary abandonment, published literature on IBS/functional GI disorder patient behavior, known clinical workflows for gastroenterologists and registered dietitians, and the hypothesis framework defined by the CPO agent.
+
+This is called **synthetic user research** — a technique increasingly used in early-stage product discovery to stress-test hypotheses before committing to full research cycles.
+
+### Why this choice was made
+
+At Phase A→B, the goal is not to achieve statistical significance. It is to identify whether hypotheses are *obviously wrong* before investing in architecture and code. Synthetic interviews are well-suited for this because they surface logical gaps, missing edge cases, and under-specified user segments at very low cost and in hours rather than weeks.
+
+The risk is that AI-generated personas reflect biases in training data and may miss non-obvious behavioral patterns.
+
+### How the risk was mitigated
+
+The synthetic research was **validated against real users** before any product decisions were locked. Specifically:
+
+- Alex personally tested H1 (friction hypothesis) with himself and his partner over 5 days
+- Alex had a direct conversation with a nutritionist to sense-check H2 (clinical value hypothesis)
+- The addition of **Segment F** (prior diagnosis + relapse) came from Alex's direct real-world observation, not from the synthetic interviews — demonstrating that real-world input meaningfully shaped the output
+
+The synthetic interviews provided the structure and breadth. Real-world signals provided the grounding and the edge cases that AI missed.
+
+### What this means for the findings
+
+The conclusions in `docs/03-validation-plan-and-results.md` should be read as **validated hypotheses, not as statistically significant research findings**. They are strong enough to justify proceeding to Phase C (Definition) and building an MVP. They are not sufficient to make claims about market size, conversion rates, or retention.
+
+Full qualitative research (real interviews, session recordings) is planned for Phase D (Build) and beyond, once a working prototype exists to test.
+
+### Why this is documented here
+
+Transparency about methodology is non-negotiable in a public build. Hiding that interviews were AI-generated would undermine the credibility of everything else in this repo. Documenting it clearly — including how the risk was mitigated — is the correct way to use this technique responsibly.
+
+This is also consistent with the broader positioning of this project: demonstrating how a senior PM uses AI as a force multiplier without substituting human judgment on what matters.
