@@ -42,8 +42,7 @@ The result: months of wasted consultations, delayed diagnoses, and frustrated pa
 ## Status
 
 | Phase | Status |
-|-------|
---------|
+|-------|--------|
 | Phase A — Ideation / Selection | ✅ GO (Founder scorecard: 43/50) |
 | Phase B — Validation (H1 + H2) | ✅ PASSED (H1: 14/15, H2: 15/15) |
 | Phase C — Definition (PRD-Lite) | In progress |
