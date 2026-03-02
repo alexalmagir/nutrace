@@ -197,6 +197,28 @@ nutrace/
 | 2026-03-01 | PDF must include symptom severity indicator | CPO — Phase B |
 | 2026-03-01 | Eating disorder contraindication screen in onboarding | CPO — Phase B |
 | 2026-03-01 | Segment F added: prior diagnosis + relapse | Alex — validated with real users |
+| 2026-03-02 | Monetization: Free for patients, HCP portal subscription ($39/mo) at V1.5 | CPO + CMO |
+| 2026-03-02 | MVP ships with zero paywall — PDF export fully unlocked | CPO + CMO |
+| 2026-03-02 | DiGA certification (Germany) flagged as Phase 3 option (2026–2027) | CPO |
+
+---
+
+## Monetization Decision
+
+Strategy: Free for patients, subscription for HCPs (B2B2C)
+
+| Phase | Model | Timing |
+| ------ | ----- | ------ |
+| MVP (V1) | Fully free — no paywall, no payment infrastructure | Phase D (now) |
+| V1.5 | HCP portal subscription: $39/month per clinician, $349/year | Post D7 retention validation |
+| V1.5 add-on | Patient extended history: $2.99/month beyond 90-day log | Low priority; signal-dependent |
+| Phase 3 | DiGA certification (Germany) — insurance reimbursement ~€400–600/year | 2026–2027 evaluation |
+
+**One-line decision:** "Free for patients, subscription for clinicians — Nutrace earns money when it delivers clinical value, not before."
+
+**Non-negotiable for MVP:** PDF export must be fully unlocked. Gating it behind a paywall contradicts the clinical value proposition.
+
+**CTO note:** Data model must support patient → clinician linking (multi-tenancy) to avoid a rebuild at V1.5, even though the HCP portal UI ships later.
 
 ---
 

@@ -302,7 +302,7 @@ This framing must appear in:
 | OQ-01 | What is the minimum AI ingredient detection accuracy required before launch? | CTO + CPO | Before build Phase D |
 | OQ-02 | Should the proactive trigger alert fire after 3 days of data, or only after a statistically meaningful correlation? | CPO + CTO | Before ML design session |
 | OQ-03 | Should the eating disorder contraindication screen block access or only show an advisory? | CPO + CDO | Before UX flows |
-| OQ-04 | What is the monetization model for MVP — free, freemium, or paid? | Founder + CPO | Before launch |
+| OQ-04 | ~~What is the monetization model for MVP?~~ **RESOLVED (2026-03-02):** MVP ships free (no paywall). V1.5 = HCP portal subscription ($39/month). See `docs/competitive-analysis.md` Section 6. | CPO + CMO | ✅ Done |
 | OQ-05 | Does the PDF need to be translated/localized at MVP? Which languages? | CPO + CMO | Before launch |
 | OQ-06 | Will Nutrace store photos in the cloud or only on-device? (Privacy and GDPR implications) | CTO + CPO | Before architecture finalized |
 

@@ -365,6 +365,151 @@ The current framing emphasizes friction reduction, which is a means, not the cor
 
 ---
 
+## 6. Monetization Analysis
+
+### 6.1 Competitor Monetization Models
+
+| Competitor | Model | Patient pricing | HCP / Institutional | Notes |
+| ---------- | ------ | --------------- | ------------------- | ----- |
+| **mySymptoms** | Freemium + B2B | Free (limited: 2 symptom types, 2 food groups); Premium ~£4.99 one-time purchase | Clinic portal: HCP SaaS subscription (price undisclosed — likely $25–75/month/practitioner) | Only player combining consumer freemium + institutional B2B. Strongest monetization architecture in category. |
+| **Bowelle** | Consumer freemium | Free (limited features); $3.99/month or $29.99/year | None | Pure consumer subscription. No institutional tier. |
+| **Nerva** | Premium subscription | 7-day free trial; $19.99/month or $199/year; FSA/HSA eligible in US | None | No free tier after trial. Highest price point in category. Clinician referral = acquisition channel, not revenue channel. |
+| **Cara Care / Mahana** | Freemium + insurance | Free app; dietitian program ~$30–50/month (estimated) | DiGA certification (Germany): statutory health insurance (GKV) covers ~€400–600/year per patient | Exited market (May 2025). DiGA model is the most sophisticated: insurance pays, not patient. Required clinical evidence + BfArM approval (12–24 months). |
+| **Mahana IBS** | Insurance Rx only | ~$99/month billed through insurance; prescription required | Payer/employer channel | Wound down. Prescription-gated = zero direct consumer revenue. Highest revenue per user if covered. |
+| **LivingWith UC** | Pharma-sponsored | Free to patients | Pfizer funds entirely | No patient revenue. Revenue = Pfizer marketing budget. Not replicable for independents. |
+| **Gut AI** | Consumer subscription | 7-day free trial; $6.99/month | None | No free tier after trial. AI-first positioning justifies price premium vs Bowelle. |
+| **Gutly** | Consumer freemium | Free tier; premium ~$4.99/month or $39.99/year (estimated) | None | Wellness pricing. |
+| **Gut Lens** | Consumer freemium | Free tier; premium ~$4.99–7.99/month (estimated) | None | Limited public pricing data. |
+| **EatSense** | Consumer freemium | Free tier; likely $4.99–9.99/month | None | 2024 launch, limited data available. |
+
+---
+
+### 6.2 Category Monetization Patterns
+
+Five distinct models exist in the category:
+
+1. **Consumer freemium → paid** (Bowelle, Gutly, Gut Lens, EatSense) — most common; low price point ($3–7/month); high churn; CAC vs LTV challenge at consumer scale.
+2. **Premium subscription only** (Nerva, Gut AI) — removes free tier friction; works when brand/credibility justifies no trial; higher ARPU, lower conversion.
+3. **Consumer + B2B dual model** (mySymptoms) — rare in category; highest ceiling; HCP portal creates institutional stickiness and recurring B2B revenue alongside consumer base.
+4. **Insurance reimbursement** (Cara Care DiGA, Mahana IBS) — highest revenue per user (€400–600/year DiGA; ~$1,188/year Mahana); requires clinical evidence and regulatory approval (12–24 months); non-discretionary budget.
+5. **Pharma sponsorship** (LivingWith UC) — free to patients; not replicable without pharma partnership; aligned only when product serves a pharma-targetable population.
+
+**Key insight:** Only mySymptoms has cracked the dual consumer+institutional model. All AI entrants (Gut AI, Gutly, Gut Lens, EatSense) are consumer-only and wellness-priced. There is no player currently executing a clinical-grade B2B model with AI capture.
+
+---
+
+### 6.3 Three Monetization Strategies for Nutrace
+
+#### Strategy A — Consumer Freemium Subscription
+
+**Model:** Free basic tier → paid premium ($4.99/month or $39.99/year)
+
+**Free tier:** 7-day log history, basic pattern view, 1 PDF export per month
+**Premium tier:** Unlimited log history, full pattern view, unlimited PDF export, delayed check-in prompts, priority AI correction
+
+**Revenue logic:** Proven category model. Predictable MRR. Low acquisition barrier.
+
+**CPO assessment:**
+
+- Pros: Immediate revenue path; proven model; no B2B sales motion required
+- Cons: Gating PDF export behind paywall contradicts the core clinical value proposition — a patient who can't export their log for a doctor's appointment gets no clinical value from the app; this creates a tension that undermines the "clinical-grade" positioning; churn at consumer price point is high (category D7 retention ~30%); requires large user base to generate meaningful revenue
+
+**CMO assessment:** Weakens the one-liner. "The food diary that warns you before you eat — and gives your doctor a log they can actually use" becomes dishonest if the log is paywalled. Positioning damage.
+
+**Verdict: NOT recommended as primary strategy.** Can exist as a light monetization layer (optional premium for extended history) but should not gate core clinical features.
+
+---
+
+#### Strategy B — Free for Patients, Subscription for HCPs (B2B2C)
+
+**Model:** Patient app 100% free, unlimited → HCP portal paid subscription ($39/month per clinician or $349/year)
+
+**Patient tier (free, forever):**
+
+- Unlimited logging, patterns, PDF export
+- All core features: photo capture, voice note, proactive alert, delayed check-in
+
+**HCP portal (paid):**
+
+- Clinician dashboard: view patient logs, access PDFs, see pattern summaries
+- Patient invite / onboarding via clinician
+- Aggregate anonymised pattern data across cohort (future)
+- ~$39/month per clinician; ~$199/month per practice (multi-clinician)
+
+**Revenue logic:** HCPs have institutional budget (not discretionary spend). LTV per HCP = $39 × 12 = $468/year, vs estimated $28/year for consumer ($4.99 × ~40% retention-adjusted). Patient adoption is not limited by paywall — data density grows freely — which makes the HCP portal more valuable over time.
+
+**CPO assessment:**
+
+- Pros: Aligns incentives perfectly — free patient = more logging = more data density = more value to HCP = HCP subscribes; consistent with clinical positioning; mySymptoms already validated demand (Clinic portal exists and is used); HCP LTV significantly higher than consumer
+- Cons: HCP portal is V2 (not MVP); path to revenue is longer; requires HCP sales/distribution motion; needs critical mass of patients before HCPs see value
+
+**CMO assessment:** Fully consistent with messaging. "Free for patients, paid for HCPs" is a strong market narrative — it signals confidence in clinical value. HCPs are credibility amplifiers: their use of the portal is a referral engine (they recommend Nutrace to more patients).
+
+**Verdict: RECOMMENDED as primary long-term strategy.** MVP launches free (no revenue) to build patient base; HCP portal subscription launches at V1.5.
+
+---
+
+#### Strategy C — Consumer Freemium + DiGA Certification Path (Insurance Reimbursement)
+
+**Model:** MVP launches free (or light freemium) → pursue DiGA certification in Germany → statutory health insurance (GKV) covers ~€400–600/year per prescription
+
+**Phase 1:** Free MVP — build user base, collect real-world evidence (retention data, clinical use cases, professional validation)
+**Phase 2 (12–24 months):** Apply to BfArM for DiGA fast-track listing → listed on DiGA directory → GPs and gastroenterologists can prescribe Nutrace → GKV covers the cost
+**Revenue:** ~€400–600 per prescribed patient per year; non-discretionary (insurance budget); no patient price sensitivity
+
+**CPO assessment:**
+
+- Pros: Highest revenue ceiling (~€500/year vs $39–$49 consumer); non-discretionary budget; clinical credibility is a prerequisite (we already have H1+H2); Cara Care proved the model works before it exited
+- Cons: 12–24 month process; requires German-language app + GDPR-grade data governance; BfArM clinical evidence standards are strict; EU-market-first limits global ambition initially; Cara Care exited despite DiGA status (business model alone doesn't guarantee survival)
+
+**CMO assessment:** DiGA certification is a credibility signal even outside Germany. "FDA-equivalent European certification" in messaging adds clinical authority. But it's a 2026–2027 play, not a 2025 MVP play.
+
+**Verdict: NOT recommended for MVP, but VALID as Phase 3 strategic option.** Document as future path; architect the app to support it (data governance, clinical evidence collection, German localisation consideration).
+
+---
+
+### 6.4 Agreed Monetization Strategy — CPO + CMO Decision
+
+**Primary strategy: Strategy B — Free for Patients, Subscription for HCPs.**
+
+**Rationale (CPO):**
+
+1. Gating clinical features behind a consumer paywall (Strategy A) would contradict the value proposition and damage the clinical credibility Nutrace is built on
+2. mySymptoms already validated that HCPs will pay for patient data access (Clinic portal)
+3. HCP LTV ($468/year) is 16× consumer LTV ($28/year adjusted for churn) at comparable conversion effort
+4. Free patient tier maximises adoption speed — critical for the retention hypothesis being tested at MVP
+5. Strategy B also opens an HCP referral channel: clinicians who subscribe recommend Nutrace to more patients, creating a flywheel
+
+**Rationale (CMO):**
+
+1. "Free for patients" is a strong market statement — it signals that Nutrace's revenue is not dependent on patient compliance; the product earns money when it delivers clinical value, not before
+2. Consistent with the one-liner: "gives your doctor a log they can actually use" — the doctor's portal is what they pay for
+3. HCP subscribers become brand advocates (11,000 clinicians recommend Nerva — that credibility is earned through clinical tools, not consumer marketing)
+
+**Agreed model:**
+
+| Phase | Monetization | Timing |
+| ------ | ------------ | ------ |
+| MVP (V1) | Fully free — patients and HCPs | Now (Phase D build) |
+| V1.5 | HCP portal subscription: $39/month per clinician; $349/year | Post-retention validation (D7 ≥ 40%) |
+| Optional V1.5 add-on | Patient extended history: $2.99/month for log history beyond 90 days | Low priority; only if consumer demand signal appears |
+| V2+ | DiGA certification (Germany) | 2026–2027 evaluation |
+
+**One-line decision:** "Free for patients, subscription for clinicians — Nutrace earns money when it delivers clinical value, not before."
+
+---
+
+### 6.5 Implications for MVP Build
+
+**OQ-04 is resolved.** Monetization model decision has no impact on MVP technical scope — the patient app is free with no paywalls. Implications for build:
+
+- No paywall, subscription, or payment infrastructure required in MVP
+- PDF export must be fully unlocked (zero friction) — it is the primary clinical value delivery
+- HCP portal data architecture must be designed to support V1.5 without a rebuild — CTO must account for multi-tenancy (patient → clinician linking) in the data model even if the portal UI ships later
+- Privacy model must support patient-consented HCP data access (not default-on) — to be resolved by CTO in docs/06
+
+---
+
 *Prepared by: CPO + CMO, coordinated by Chief of Staff.*
 
 *All competitive data sourced from public information: App Store listings, company websites, press releases, and industry sources as of March 2026.*
