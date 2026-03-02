@@ -18,17 +18,18 @@ Users photograph their meals → a vision AI detects ingredients → if any dete
 
 | Field | Value |
 |-------|-------|
-| Phase | **C — Definition** |
+| Phase | **C → D transition** |
 | Decision | **GO ✅** (Founder scorecard: 43/50) |
 | Repo | `alexalmagir/nutrace` |
 | Branch | `main` |
-| Last session | 2026-03-01 |
-| Next step | CPO writes `docs/04-prd-lite.md` incorporating all Phase B findings |
+| Last session | 2026-03-02 (Session 004) |
+| Next step | CTO reads docs/04 + docs/05 → produces docs/06-tech-architecture.md + docs/07-implementation-plan.md |
 
 **Phase history:**
 
 - Phase A ✅ — GO decision (43/50), ICP defined, name chosen
 - Phase B ✅ — H1 PASS (14/15), H2 PASS (15/15), 6 user segments + 6 clinical segments defined
+- Phase C ✅ — PRD-Lite done (docs/04), UX flows + wireframes spec done (docs/05), FigJam diagrams + Figma Make prompts done
 
 ---
 
@@ -146,8 +147,8 @@ nutrace/
 │   ├── 01-founder-venture-brief.md  ← scorecard, market data ✅
 │   ├── 02-product-problem-icp-jtbd.md   ← CPO (pending)
 │   ├── 03-validation-plan-and-results.md ← CPO ✅
-│   ├── 04-prd-lite.md          ← CPO (next up)
-│   ├── 05-ux-flows-and-wireframes.md ← CDO (pending)
+│   ├── 04-prd-lite.md          ← CPO ✅
+│   ├── 05-ux-flows-and-wireframes.md ← CDO ✅
 │   ├── 06-tech-architecture.md ← CTO (pending)
 │   ├── 07-implementation-plan.md ← CTO (pending)
 │   ├── 08-decisions-log.md     ← all agents (pending)
@@ -160,7 +161,8 @@ nutrace/
 ├── src/                        ← source code
 ├── tests/                      ← tests
 ├── assets/
-│   ├── wireframes/
+│   ├── user-flows/             ← FigJam navigation diagrams (6 flows) ✅
+│   ├── wireframes/             ← Figma Make prompts (6 flows) ✅
 │   └── social/
 └── .github/workflows/          ← CI (CTO, Week 3)
 ```
@@ -173,10 +175,10 @@ nutrace/
 | --- | --- | --- |
 | Chief of Staff | Session orchestration, sequencing | Active |
 | Founder | GO decision, market thesis | ✅ Done — Phase A |
-| CPO | PRD, ICP, hypotheses, metrics | ✅ Phase B done — writing PRD-Lite next |
-| CDO | UX flows, wireframes | ✅ Phase B done — UX flows next |
-| CTO | Architecture, implementation plan, code | Week 2 |
-| CMO | Positioning, README, LinkedIn | Week 4 |
+| CPO | PRD, ICP, hypotheses, metrics | ✅ Done — docs/03 + docs/04 committed |
+| CDO | UX flows, wireframes | ✅ Done — docs/05, FigJam diagrams, Figma Make prompts committed |
+| CTO | Architecture, implementation plan, code | **Next up — Phase D** |
+| CMO | Positioning, README, LinkedIn | Phase E |
 
 ---
 
