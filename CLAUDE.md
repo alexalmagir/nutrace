@@ -10,7 +10,7 @@ Nutrace is a **frictionless food and symptom diary** for people experiencing und
 
 Users photograph their meals → a vision AI detects ingredients → if any detected ingredient has previously correlated with symptoms, the app warns the user before they eat. After eating, they record a short voice note about how they feel (optional). The app surfaces patterns over time in a structured log that the user can share with their gastroenterologist or dietitian.
 
-**One sentence:** Nutrace helps people with digestive problems track what they eat and how they feel — using photos and voice, not forms — so they and their doctor can find the patterns that explain their symptoms.
+**One sentence:** Nutrace warns you before you eat a trigger food — and gives your doctor the structured log to act on it.
 
 ---
 

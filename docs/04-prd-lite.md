@@ -48,7 +48,7 @@ People with digestive disorders (IBS, IBD, GERD, food intolerances) are told to 
 
 ## 3. Product Vision (One Sentence)
 
-Nutrace is a frictionless food and symptom diary — photo and voice, not forms — that gives patients and their doctors the data to find patterns that explain digestive symptoms.
+Nutrace is a frictionless food and symptom diary that warns patients before they eat a known trigger — and gives their doctor a clinical-grade PDF to act on.
 
 ---
 

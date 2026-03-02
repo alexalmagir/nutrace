@@ -2,7 +2,7 @@
 
 **Frictionless food and symptom diary for people with digestive problems — built in public by a Senior Technical PM using AI tools.**
 
-> Photograph your meals. Record a 10-second voice note about how you feel. Let the app find the patterns. Share them with your doctor.
+> Photograph your meal — we'll warn you if it contains something that's triggered your symptoms before. Record how you feel with a voice note. In days, share the pattern with your doctor.
 
 ---
 
@@ -60,7 +60,7 @@ The result: months of wasted consultations, delayed diagnoses, and frustrated pa
 ## Tech Stack (planned)
 
 | Layer | Approach |
-|-------|-----------|
+|-------|----------|
 | Frontend | React Native (iOS + Android) or Next.js PWA |
 | Backend | FastAPI (Python) |
 | Vision AI | GPT-4V / Gemini Vision |

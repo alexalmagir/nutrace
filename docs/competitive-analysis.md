@@ -24,6 +24,7 @@
 **Value Proposition:** "Track your food and symptoms to discover what triggers your digestive problems."
 
 **Core Features:**
+
 - Manual food + symptom entry (free-text + structured)
 - Barcode scanning (food database)
 - Statistical correlation analysis (pattern detection)
@@ -35,6 +36,7 @@
 **Clinical positioning:** Strongest clinical credibility of any consumer app. Clinician portal is unique in the market.
 
 **Key weaknesses:**
+
 - Manual entry creates friction — documented adherence drop-off beyond 14 days
 - No AI for capture (no vision, no voice)
 - No proactive trigger warnings before eating
@@ -57,6 +59,7 @@
 **Value Proposition:** "Track your IBS symptoms and identify food triggers."
 
 **Core Features:**
+
 - Manual food + symptom entry
 - IBS-specific symptom tracking (Bristol Stool Chart)
 - Trigger identification (manual correlation)
@@ -66,6 +69,7 @@
 **Target segments:** IBS patients, iOS-only users who value clean design. Self-managed, not clinician-connected.
 
 **Key weaknesses:**
+
 - iOS only — no Android
 - No AI (no vision, no voice, no ML pattern detection)
 - Export is basic — not clinician-grade
@@ -86,6 +90,7 @@
 **Value Proposition:** "Get relief from IBS with evidence-based support from a specialist dietitian."
 
 **Core Features:**
+
 - Manual food + symptom diary
 - Evidence-based protocols (FODMAP elimination)
 - In-app dietitian program (human coach)
@@ -115,6 +120,7 @@
 **Value Proposition:** "Gut-brain hypnotherapy that actually works. Clinically proven to reduce IBS symptoms."
 
 **Core Features:**
+
 - Gut-directed hypnotherapy sessions (audio)
 - CBT-based modules (from Mahana IBS)
 - Progress tracking (symptom severity)
@@ -150,6 +156,7 @@
 **Value Proposition:** "Track, understand, and manage your UC."
 
 **Core Features:**
+
 - Manual symptom tracking
 - Medication tracking
 - Flare tracking (UC-specific)
@@ -165,6 +172,7 @@
 ### 1.7 New AI Entrants (2024–2025)
 
 #### EatSense
+
 - **Category:** AI food diary (photo + voice)
 - **Platform:** iOS + Android
 - **Launched:** 2024
@@ -172,6 +180,7 @@
 - **Key gap:** Consumer wellness focus; no proactive personal correlation alerts; no symptom tracking layer; no clinician-grade PDF; no clinical sharing
 
 #### Gut AI
+
 - **Category:** AI food photo analyzer
 - **Platform:** iOS (iOS 18+)
 - **Price:** $6.99/month
@@ -180,6 +189,7 @@
 - **Validation:** Confirms vision AI is technically feasible and user-accepted for food capture. Does NOT correlate with personal symptom history — no proactive alert capability.
 
 #### Gutly
+
 - **Category:** AI FODMAP analyzer
 - **Platform:** iOS
 - **Rating:** 4.53/5 (77 ratings)
@@ -187,6 +197,7 @@
 - **Key gap:** FODMAP lookup only (no personal symptom correlation); no clinical export; wellness positioning only
 
 #### Gut Lens
+
 - **Category:** AI FODMAP photo analyzer
 - **Platform:** iOS
 - **Positioning:** Photo → FODMAP breakdown; "AI learns your patterns"
@@ -199,7 +210,7 @@
 ## 2. Feature Comparison Matrix
 
 | Feature | Nutrace (MVP) | mySymptoms | Bowelle | Cara Care | EatSense | Gut AI | Gutly |
-|---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| --------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Vision AI capture** | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | **Voice capture (STT)** | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
 | **Manual entry** | ❌ MVP | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
@@ -220,10 +231,11 @@
 ## 3. Positioning Map
 
 ### Axes
+
 - **X-axis:** Capture friction — High (100% manual entry) → Low (AI-first, photo + voice)
 - **Y-axis:** Clinical orientation — Wellness/self-care → Clinical/doctor-ready
 
-```
+```text
                          CLINICAL / DOCTOR-READY
                                    │
                                    │
@@ -246,6 +258,7 @@
 ```
 
 **Notes:**
+
 - Cara Care (top-left, clinical+manual) **exited the market** May 2025 — slot is now open
 - Nerva is off-map — therapy, not diary; different JTBD
 - Mahana IBS (prescription PDT) is off-map — exited market
@@ -261,6 +274,7 @@
 **Yes. The UVP is confirmed and defensible.**
 
 No current competitor combines:
+
 1. **Vision AI + voice capture** — lowest friction in the market
 2. **Proactive personal correlation alerts** — unique; zero competitors have this
 3. **Clinical-grade PDF export** with severity indicator and regulatory disclaimer
@@ -277,6 +291,7 @@ The closest competitor on clinical credibility (mySymptoms) has zero AI and no p
 **Current (from CLAUDE.md):** "Frictionless food and symptom diary for digestive patients — photo + voice, not forms."
 
 **Assessment:** Accurate but undersells the two strongest differentiators:
+
 1. The proactive alert ("warns you before you eat") is the sharpest hook — no competitor has it
 2. The clinical PDF ("your doctor can actually use") separates Nutrace from wellness AI apps
 
@@ -290,7 +305,7 @@ The current framing emphasizes friction reduction, which is a means, not the cor
 > "Nutrace watches your patterns so you don't have to. Photograph your meal — we'll warn you if something in it has triggered your symptoms before. After, record how you feel with a voice note. In days, you and your doctor will see what your gut has been trying to tell you."
 
 **For the HCP:**
-> "Nutrace gives your patients a clinical-grade symptom diary they'll actually maintain — AI capture, not forms. 14-day structured log with severity indicators, exportable as PDF."
+> "Your patients won't maintain a paper diary. Nutrace captures meals by photo, symptoms by voice, and exports a structured 14-day log — severity indicators included — as a PDF you can act on."
 
 **One-liner (App Store / LinkedIn):**
 > "The food diary that warns you before you eat — and gives your doctor a log they can actually use."
@@ -300,7 +315,7 @@ The current framing emphasizes friction reduction, which is a means, not the cor
 ### 4.4 What Should We Change?
 
 | Area | Current | Recommendation | Rationale |
-|------|---------|----------------|-----------|
+| ------ | --------- | ---------------- | ----------- |
 | **Core positioning** | Keep | No change needed | White space confirmed. UVP is real and unoccupied. |
 | **Proactive alert messaging** | Lead with it | Lead with it in ALL messaging | No competitor has this. It is Nutrace's sharpest differentiator and clearest hook. |
 | **ICP (undiagnosed / in-diagnosis)** | Keep | No change | Most underserved moment. Best retention driver (high anxiety, high motivation to track). |
@@ -315,7 +330,7 @@ The current framing emphasizes friction reduction, which is a means, not the cor
 ### 4.5 Competitive Risks
 
 | Risk | Likelihood | Impact | Mitigation |
-|------|-----------|--------|------------|
+| ------ | ----------- | -------- | ------------ |
 | mySymptoms adds vision AI capture | Medium (12–18 months) | High | Launch and establish user base before they respond. First-mover advantage in top-right quadrant. |
 | Gut AI / Gutly adds symptom tracking + clinical PDF | Low — different JTBD, requires full pivot | Medium | Clinical credibility + ICP focus creates switching cost. These apps have no symptom layer today. |
 | Nerva enters tracking space | Low | Medium | Nerva's moat is therapy (hypnotherapy + CBT). Entering food diary would dilute. |
@@ -340,7 +355,7 @@ The current framing emphasizes friction reduction, which is a means, not the cor
 ## 5. Summary
 
 | Question | Answer |
-|----------|---------|
+| ---------- | -------- |
 | Do we have a UVP? | **Yes** — proactive personal correlation alert + clinical PDF + AI capture. Unique combination. No competitor has it. |
 | Should we change positioning? | **No change to strategy.** Refine messaging to lead with the proactive alert, not just friction reduction. |
 | Should we change core features? | **No.** MVP scope is correct. Proactive alert is the hook; clinical PDF is the closer. |
