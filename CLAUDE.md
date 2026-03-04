@@ -22,8 +22,8 @@ Users photograph their meals → a vision AI detects ingredients → if any dete
 | Decision | **GO ✅** (Founder scorecard: 43/50) |
 | Repo | `alexalmagir/nutrace` |
 | Branch | `main` |
-| Last session | 2026-03-03 (Session 005) |
-| Next step | Alex confirms CTO stack decisions → Week 1 build begins (backend skeleton + mobile onboarding) |
+| Last session | 2026-03-03 (Session 006) |
+| Next step | CTO arranca Semana 1 — backend skeleton + mobile onboarding |
 
 **Phase history:**
 
@@ -205,7 +205,13 @@ nutrace/
 | 2026-03-03 | Photo storage: cloud (Supabase Storage, EU region) — not on-device | CTO |
 | 2026-03-03 | Pattern algorithm: ≥3 days data, ≥60% correlation, ≥2 symptomatic entries | CTO |
 | 2026-03-03 | Multi-tenancy (hcp_links table) designed in from day 1; HCP portal UI ships at V1.5 | CTO |
-| 2026-03-03 | Build plan: 6 weeks to private beta (3 real users, 3+ days logging) | CTO |
+| 2026-03-03 | Build plan revised: 4 weeks to private beta (10 users + 1 HCP feedback) | All-hands |
+| 2026-03-03 | Beta success = 1 HCP qualitative feedback on real PDF (GO/NO-GO for V1.5) | Founder + CPO |
+| 2026-03-03 | GTM: 3 tracks from Week 1 — Reddit seeding, HCP outreach, build-in-public | CMO |
+| 2026-03-03 | HCP PDF share link (no login) added to Week 4 scope | CTO |
+| 2026-03-03 | Symptom nudge push notification added (if 2 days without symptom entry) | CPO + CTO |
+| 2026-03-03 | Flow 6 simplified: table of numbers, no timeline chart | CDO |
+| 2026-03-03 | PDF summary: text table replaces SVG bar chart | CDO + CTO |
 
 ---
 
