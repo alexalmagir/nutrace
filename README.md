@@ -2,7 +2,7 @@
 
 **Frictionless food and symptom diary for people with digestive problems — built in public by a Senior Technical PM using AI tools.**
 
-> Photograph your meals. Record a 10-second voice note about how you feel. Let the app find the patterns. Share them with your doctor.
+> Photograph your meal — we'll warn you if it contains something that's triggered your symptoms before. Record how you feel with a voice note. In days, share the pattern with your doctor.
 
 ---
 
@@ -20,9 +20,9 @@ The result: months of wasted consultations, delayed diagnoses, and frustrated pa
 
 | Step | What you do | What Nutrace does |
 |------|-------------|-------------------|
-| Before eating | Take a photo of your meal | Detects ingredients via vision AI |
+| Before eating | Take a photo of your meal | Detects ingredients via vision AI — and warns you if the meal contains a known trigger |
 | After eating | Record a 10-second voice note | Transcribes and structures your symptoms |
-| Over time | Nothing | Surfaces patterns: which foods correlate with which symptoms |
+| Over time | Nothing | Learns which foods correlate with your symptoms, surfaces patterns, and powers real-time alerts before you eat |
 | At appointment | Tap Export | Generates a structured PDF for your gastroenterologist or dietitian |
 
 **No manual logging. No forms. No friction.**
@@ -44,14 +44,15 @@ The result: months of wasted consultations, delayed diagnoses, and frustrated pa
 | Phase | Status |
 |-------|--------|
 | Phase A — Ideation / Selection | ✅ GO (Founder scorecard: 43/50) |
-| Phase B — Validation (H1 + H2) | In progress |
-| Phase C — Definition (PRD-Lite) | Pending |
+| Phase B — Validation (H1 + H2) | ✅ PASSED (H1: 14/15, H2: 15/15) |
+| Phase C — Definition (PRD-Lite) | In progress |
 | Phase D — Build | Pending |
 | Phase E — Launch | Pending |
 
 **Active docs:**
 - [Project Charter](docs/00-project-charter.md) — GO decision, ICP, scope
 - [Founder Venture Brief](docs/01-founder-venture-brief.md) — market data, scorecard, 0→1 roadmap
+- [Validation Plan and Results](docs/03-validation-plan-and-results.md) — H1 + H2 results, 30 interviews, user/clinical segmentation
 - [AI Build Log](docs/ai-build-log.md) — running log of AI-assisted build sessions
 
 ---

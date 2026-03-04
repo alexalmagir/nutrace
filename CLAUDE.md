@@ -8,9 +8,9 @@
 
 Nutrace is a **frictionless food and symptom diary** for people experiencing undiagnosed or recently diagnosed digestive problems (IBS, IBD, food intolerances, GERD).
 
-Users photograph their meals → a vision AI detects ingredients. After eating, they record a 10-second voice note about how they feel. The app surfaces patterns over time in a structured log that the user can share with their gastroenterologist or dietitian.
+Users photograph their meals → a vision AI detects ingredients → if any detected ingredient has previously correlated with symptoms, the app warns the user before they eat. After eating, they record a short voice note about how they feel (optional). The app surfaces patterns over time in a structured log that the user can share with their gastroenterologist or dietitian.
 
-**One sentence:** Nutrace helps people with digestive problems track what they eat and how they feel — using photos and voice, not forms — so they and their doctor can find the patterns that explain their symptoms.
+**One sentence:** Nutrace warns you before you eat a trigger food — and gives your doctor the structured log to act on it.
 
 ---
 
@@ -18,18 +18,26 @@ Users photograph their meals → a vision AI detects ingredients. After eating, 
 
 | Field | Value |
 |-------|-------|
-| Phase | **A — Ideation / Selection** |
+| Phase | **D — Build** |
 | Decision | **GO ✅** (Founder scorecard: 43/50) |
 | Repo | `alexalmagir/nutrace` |
 | Branch | `main` |
-| Last session | 2026-02-28 |
-| Next step | Validate H1 + H2 → CPO writes PRD-Lite |
+| Last session | 2026-03-03 (Session 005) |
+| Next step | Alex confirms CTO stack decisions → Week 1 build begins (backend skeleton + mobile onboarding) |
+
+**Phase history:**
+
+- Phase A ✅ — GO decision (43/50), ICP defined, name chosen
+- Phase B ✅ — H1 PASS (14/15), H2 PASS (15/15), 6 user segments + 6 clinical segments defined
+- Phase C ✅ — PRD-Lite done (docs/04), UX flows + wireframes spec done (docs/05), FigJam diagrams + Figma Make prompts done
+- Phase D 🔄 — Tech architecture done (docs/06), implementation plan done (docs/07) — awaiting Alex sign-off + Week 1 build start
 
 ---
 
 ## ICP (Who We're Building For)
 
 **Primary user:**
+
 - Age 20–50, recurring digestive symptoms (bloating, abdominal pain, irregular bowel, nausea)
 - Currently consulting or about to consult a gastroenterologist or dietitian
 - Suspects food-related triggers — **no confirmed diagnosis yet**
@@ -39,17 +47,32 @@ Users photograph their meals → a vision AI detects ingredients. After eating, 
 
 **Professionals in the loop:** gastroenterologists + registered dietitians. Both receive data via PDF export (not app login — that's V2).
 
+**User segments (Phase B — 6 defined):**
+
+| Segment | Who | Key need |
+| --- | --- | --- |
+| A — Active Diagnosis Seeker | In consultation, no diagnosis yet | First insight in ≤3 days; export prominent |
+| B — Self-Investigator | Self-managing, no specialist | Privacy controls; pattern view compelling |
+| C — Chronic Follow-up | Confirmed diagnosis, managing long-term | Month-over-month comparison; clean export |
+| D — High-Literacy Patient | Healthcare professional or expert user | Fast correction flow; AI accuracy disclosed |
+| E — Dismissed Patient | Told "nothing's wrong" despite symptoms | Data as evidence framing |
+| F — Prior Diagnosis + Relapse | Had diagnosis, improved, symptoms returned | Prior diagnosis context field; tripartite question: relapse / new condition / misdiagnosis |
+
 ---
 
 ## MVP Scope (What We Build)
 
 **IN scope:**
+
 - Meal photo → AI ingredient detection (with user correction flow)
-- Post-meal voice note → transcribed symptom record
-- Pattern view: timeline of meals + symptoms
-- Export: PDF or shareable link for the professional
+- **Proactive trigger alert:** when photo is taken, app warns if any detected ingredient has previously correlated with symptoms
+- Post-meal voice note → transcribed symptom record (voice optional — photo-only entries supported)
+- Pattern view: timeline of meals + symptoms (first insight target: ≤3 days)
+- Export: PDF with symptom severity indicator (traffic light / 1–5 scale) + regulatory disclaimer
+- Onboarding: eating disorder contraindication screen + optional prior diagnosis context field (Segment F)
 
 **OUT of scope for MVP:**
+
 - Professional dashboard / login
 - Barcode scanning
 - FODMAP analysis or dietary recommendations
@@ -57,17 +80,33 @@ Users photograph their meals → a vision AI detects ingredients. After eating, 
 - Social or community features
 - Wearable integrations
 - Medical advice or diagnosis
+- Pattern comparison view across episodes (Segment F — future feature)
 
 ---
 
 ## Critical Hypotheses (must validate before building)
 
-| # | Hypothesis | Test method | Pass criteria |
-|---|-----------|------------|---------------|
-| H1 | Photo + voice reduces friction enough for 7-day sustained logging | Manual experiment: 3 users, WhatsApp + shared folder, 5 days | ≥2/3 complete ≥4/5 days |
-| H2 | Structured log is clinically useful to professionals | 15-min call with gastroenterologist or dietitian + mock dashboard | "Yes, I'd recommend this to patients" |
+| # | Hypothesis | Result |
+| --- | --- | --- |
+| H1 | Photo + voice reduces friction enough for 7-day sustained logging | ✅ PASS — 14/15 (Round 2) |
+| H2 | Structured log is clinically useful to professionals | ✅ PASS — 15/15 unanimous (Round 2) |
 
-**Rule:** Both must pass before writing code. If H1 fails → revisit capture mechanic. If H2 fails → pivot away from clinical angle.
+**Phase B complete. Both hypotheses validated. Proceed to build.**
+
+Full methodology, interview transcripts, and segmentation: `docs/03-validation-plan-and-results.md`
+
+**Key build implications from Phase B (must inform PRD and architecture):**
+
+- Voice input optional — photo-only entries must work
+- First insight target: 3 days (not 7) — early signal = retention driver
+- Proactive trigger alert fires at photo-capture step
+- AI correction flow: 2-tap max, editable ingredient list before saving
+- PDF must include symptom severity indicator (traffic light or 1–5 scale)
+- Delayed symptom onset support: check-in prompts at 2h and 4h post-meal
+- Eating disorder contraindication screen in onboarding
+- PDF regulatory disclaimer on every export
+- Segment F: optional prior diagnosis context field in onboarding (appears in PDF header)
+- Data window: 7 days minimum useful; 14 days default
 
 ---
 
@@ -108,9 +147,9 @@ nutrace/
 │   ├── 00-project-charter.md   ← GO decision, ICP, scope ✅
 │   ├── 01-founder-venture-brief.md  ← scorecard, market data ✅
 │   ├── 02-product-problem-icp-jtbd.md   ← CPO (pending)
-│   ├── 03-validation-plan-and-results.md ← CPO (pending)
-│   ├── 04-prd-lite.md          ← CPO (pending)
-│   ├── 05-ux-flows-and-wireframes.md ← CDO (pending)
+│   ├── 03-validation-plan-and-results.md ← CPO ✅
+│   ├── 04-prd-lite.md          ← CPO ✅
+│   ├── 05-ux-flows-and-wireframes.md ← CDO ✅
 │   ├── 06-tech-architecture.md ← CTO (pending)
 │   ├── 07-implementation-plan.md ← CTO (pending)
 │   ├── 08-decisions-log.md     ← all agents (pending)
@@ -123,7 +162,8 @@ nutrace/
 ├── src/                        ← source code
 ├── tests/                      ← tests
 ├── assets/
-│   ├── wireframes/
+│   ├── user-flows/             ← FigJam navigation diagrams (6 flows) ✅
+│   ├── wireframes/             ← Figma Make prompts (6 flows) ✅
 │   └── social/
 └── .github/workflows/          ← CI (CTO, Week 3)
 ```
@@ -133,25 +173,58 @@ nutrace/
 ## Agent Team
 
 | Agent | Role | Status |
-|-------|------|--------|
+| --- | --- | --- |
 | Chief of Staff | Session orchestration, sequencing | Active |
 | Founder | GO decision, market thesis | ✅ Done — Phase A |
-| CPO | PRD, ICP, hypotheses, metrics | Next up |
-| CTO | Architecture, implementation plan, code | Week 2 |
-| CDO | UX flows, wireframes | Week 2 |
-| CMO | Positioning, README, LinkedIn | Week 4 |
+| CPO | PRD, ICP, hypotheses, metrics | ✅ Done — docs/03 + docs/04 committed |
+| CDO | UX flows, wireframes | ✅ Done — docs/05, FigJam diagrams, Figma Make prompts committed |
+| CTO | Architecture, implementation plan, code | 🔄 Active — docs/06 + docs/07 produced |
+| CMO | Positioning, README, LinkedIn | Phase E |
 
 ---
 
 ## Key Decisions Log (summary)
 
 | Date | Decision | Made by |
-|------|----------|---------|
+| --- | --- | --- |
 | 2026-02-28 | Project name: Nutrace | CMO + CPO |
 | 2026-02-28 | Phase A: GO (43/50) | Founder |
 | 2026-02-28 | MVP scope: patient-only, PDF export | Chief of Staff + CPO |
 | 2026-02-28 | ICP: undiagnosed/in-diagnosis, not wellness | CPO |
 | 2026-02-28 | Professionals: gastro + dietitian via PDF | CPO |
+| 2026-03-01 | Voice input optional (photo-only entries supported) | CPO + CDO — Phase B |
+| 2026-03-01 | Proactive trigger alert added to capture flow | CPO + CDO — Phase B |
+| 2026-03-01 | First insight target: 3 days (not 7) | CPO — Phase B |
+| 2026-03-01 | PDF must include symptom severity indicator | CPO — Phase B |
+| 2026-03-01 | Eating disorder contraindication screen in onboarding | CPO — Phase B |
+| 2026-03-01 | Segment F added: prior diagnosis + relapse | Alex — validated with real users |
+| 2026-03-02 | Monetization: Free for patients, HCP portal subscription ($39/mo) at V1.5 | CPO + CMO |
+| 2026-03-02 | MVP ships with zero paywall — PDF export fully unlocked | CPO + CMO |
+| 2026-03-02 | DiGA certification (Germany) flagged as Phase 3 option (2026–2027) | CPO |
+| 2026-03-03 | Stack: React Native + Expo, FastAPI, Supabase (EU region), GPT-4o Vision, Whisper, WeasyPrint, Railway | CTO |
+| 2026-03-03 | Photo storage: cloud (Supabase Storage, EU region) — not on-device | CTO |
+| 2026-03-03 | Pattern algorithm: ≥3 days data, ≥60% correlation, ≥2 symptomatic entries | CTO |
+| 2026-03-03 | Multi-tenancy (hcp_links table) designed in from day 1; HCP portal UI ships at V1.5 | CTO |
+| 2026-03-03 | Build plan: 6 weeks to private beta (3 real users, 3+ days logging) | CTO |
+
+---
+
+## Monetization Decision
+
+Strategy: Free for patients, subscription for HCPs (B2B2C)
+
+| Phase | Model | Timing |
+| ------ | ----- | ------ |
+| MVP (V1) | Fully free — no paywall, no payment infrastructure | Phase D (now) |
+| V1.5 | HCP portal subscription: $39/month per clinician, $349/year | Post D7 retention validation |
+| V1.5 add-on | Patient extended history: $2.99/month beyond 90-day log | Low priority; signal-dependent |
+| Phase 3 | DiGA certification (Germany) — insurance reimbursement ~€400–600/year | 2026–2027 evaluation |
+
+**One-line decision:** "Free for patients, subscription for clinicians — Nutrace earns money when it delivers clinical value, not before."
+
+**Non-negotiable for MVP:** PDF export must be fully unlocked. Gating it behind a paywall contradicts the clinical value proposition.
+
+**CTO note:** Data model must support patient → clinician linking (multi-tenancy) to avoid a rebuild at V1.5, even though the HCP portal UI ships later.
 
 ---
 

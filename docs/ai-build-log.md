@@ -175,6 +175,171 @@ Phase C — Definition. CPO writes `docs/04-prd-lite.md` incorporating all Phase
 
 ---
 
+### Session 003 — 2026-03-01
+
+**Duration:** ~30 minutes
+**Phase:** C — Definition
+**Agents activated:** Chief of Staff, CPO
+
+#### 003 — What Alex brought
+
+- Phase B complete and fully pushed to GitHub (docs/03, README, CLAUDE.md)
+- All context files updated and in sync
+- Signal to proceed to Phase C — Definition
+
+#### 003 — What the AI was asked to do
+
+1. Read `docs/03-validation-plan-and-results.md` in full to ground the PRD-Lite in Phase B findings
+2. Write `docs/04-prd-lite.md` — the minimum viable PRD to unblock CDO (UX flows) and CTO (architecture)
+3. Update `docs/ai-build-log.md` with Session 003
+4. Push both files to GitHub
+
+#### 003 — What the AI produced
+
+- `docs/04-prd-lite.md` — CPO PRD-Lite covering:
+  - Problem statement (grounded in Phase B data)
+  - Product vision sentence
+  - ICP, 6 user segments (A–F) with Segment F detail, 6 clinical segments (P1–P6) as PDF-recipient profiles
+  - 6 Jobs to Be Done (JTBD-01 through JTBD-06)
+  - MVP feature set: capture (photo + voice, voice optional), proactive trigger alert, pattern view, PDF export (with traffic light severity + disclaimer), onboarding (eating disorder screen + Segment F context field)
+  - Out-of-scope table (15 features explicitly excluded)
+  - 10 hard design constraints from Phase B (for CDO + CTO)
+  - 6 required user flows at functional level
+  - Success metrics: North Star (7-day retention ≥40%), 7 measurable KPIs
+  - Regulatory framing section with MDR/FDA scope note
+  - Risk register (5 risks) and open questions (6 OQs)
+  - Handoff checklist for CDO and CTO
+
+#### 003 — What Alex decided (human judgment calls)
+
+No new strategic decisions made this session — all scope, constraints, and segments were locked in Phase B. CPO applied Phase B findings faithfully.
+
+#### 003 — What got committed to GitHub
+
+```text
+feat: Phase C — CPO PRD-Lite (docs/04-prd-lite.md)
+
+All Phase B findings incorporated: 6 user segments, 6 clinical segments,
+10 design constraints, 6 user flows, success metrics, regulatory framing.
+Unblocks CDO (docs/05) and CTO (docs/06).
+
+- docs/04-prd-lite.md
+- docs/ai-build-log.md (Session 003)
+```
+
+#### 003 — Key insight
+
+The PRD-Lite is intentionally scoped to what the CDO and CTO need — no more. Flows are defined functionally (what must happen), not visually (how it looks). Design constraints from Phase B are treated as hard constraints, not guidelines, to prevent them being lost in translation between product → design → engineering.
+
+#### 003 — Next step
+
+CDO reads `docs/04-prd-lite.md` and produces `docs/05-ux-flows-and-wireframes.md`, covering all 6 flows, all 6 user segments, and all design constraints from Section 7.
+
+---
+
+### Session 004 — 2026-03-02
+
+**Duration:** ~120 minutes
+**Phase:** C — Definition
+**Agents activated:** Chief of Staff, CDO, CPO (review), CMO (agent-system doc)
+
+#### 004 — What Alex brought
+
+- Phase C PRD-Lite committed and complete (`docs/04-prd-lite.md`)
+- Request to document the 6-agent AI system publicly (`docs/agent-system.md`)
+- Request for CDO to produce the full UX flows and wireframes document
+- Request for FigJam flow navigation diagrams (6 flows)
+- Request for Figma Make prompts to generate low-fidelity wireframes
+- Request for a CPO+CDO review and correction of all 6 flows and prompts
+- Request to save all session state and update all context files
+
+#### 004 — What the AI was asked to do
+
+1. Write `docs/agent-system.md` — public-facing document explaining the 6-agent architecture
+2. CDO produces `docs/05-ux-flows-and-wireframes.md` — all 6 flows, 18+ screens, ASCII wireframes, segment UX notes, constraint compliance checklist, CTO handoff questions
+3. Create 6 FigJam navigation diagrams (one per flow) — showing all screens, decision points, and navigation paths
+4. Write 6 Figma Make prompts for low-fidelity wireframe generation (one per flow)
+5. CPO + CDO formal validation review of all 6 flows and prompts — flag and correct any misalignments with PRD-Lite and UX spec
+6. Save all artifacts to `assets/user-flows/` and `assets/wireframes/` in the repo
+7. Update all context files (ai-build-log, CLAUDE.md, MEMORY.md)
+
+#### 004 — What the AI produced
+
+- `docs/agent-system.md` — 6-agent architecture doc: roles, collaboration patterns, phase activation, artifact ownership, memory architecture, transparency statement
+- `docs/05-ux-flows-and-wireframes.md` — CDO full spec: 6 flows, 18+ screens with ASCII wireframes, interaction specs, segment-specific UX notes per all 6 segments, 10-constraint compliance checklist, CTO handoff questions
+- 6 FigJam navigation diagrams (live in FigJam, linked from repo):
+  - Flow 1 — Onboarding (7 screens + advisory branch)
+  - Flow 2 — Meal Log Entry (5 screens + 2 states)
+  - Flow 3 — Delayed Symptom Check-in (notification + 1 screen)
+  - Flow 4 — Pattern View (3 screens + ingredient toggle)
+  - Flow 5 — PDF Export (2 screens)
+  - Flow 6 — Trigger Alert Detail (1 screen, 3 exit paths)
+- `assets/user-flows/README.md` — index of 6 FigJam links with flow descriptions and constraint coverage notes
+- `assets/wireframes/README.md` — 6 corrected Figma Make prompts (all screens per flow), CPO+CDO validation notes, FigJam links, placeholder Figma wireframe links
+
+**CPO+CDO review corrections applied (6 flows, 10 corrections):**
+
+| Flow | Correction |
+|------|-----------|
+| Flow 1 | Added "You can turn this off any time" to notification permission copy (Screen 1.6) |
+| Flow 2 | Both CTAs on confirmation screen (2.5) now specified as equal visual weight |
+| Flow 3 | Added 2h and 4h notification variants as separate wireframe frames. Added dynamic meal name reference in Screen 3.1 |
+| Flow 4 | Added empty state (Screen 4.0, 0 entries) — retention-critical missing screen. Added "tap to filter" interaction to ingredient view. Added bottom tab bar to all main screens |
+| Flow 5 | Added empty state (Screen 5.0, no data). Added Segment F prior condition field in PDF preview |
+| Flow 6 | Explicit constraint added: counts only ("X of Y meals"), no percentages, no statistical language — regulatory requirement |
+
+**FigJam corrections flagged for manual edit (4 items):**
+- Flow 2: rename node "Trigger Check" → "Ingredient Review + Trigger Alert"
+- Flow 3: add note that both 2h/4h notifications render same screen with dynamic copy
+- Flow 4: add empty state (0 entries) node before <3 days state
+- Flow 5: add empty state node as initial entry point
+
+#### 004 — What Alex decided (human judgment calls)
+
+| Decision | Options considered | What Alex chose | Why |
+|----------|-------------------|-----------------|-----|
+| Visual validation approach | Full Figma wireframes now / FigJam flows + Figma Make prompts | **FigJam flows + Figma Make prompts** | FigJam MCP creates live diagrams immediately; Figma Make prompts let Alex control wireframe generation on personal account |
+| Account for FigJam diagrams | Personal account (alex.almagir) / Work account (alex.maravilla) | **Work account** (MCP limitation — cannot switch accounts) | FigJam diagrams created on AiFi account; Alex to duplicate to personal |
+| Wireframes folder structure | All in `docs/` / Separate `assets/wireframes/` folder | **`assets/wireframes/`** | Keeps design assets separate from documentation |
+
+#### 004 — What got committed to GitHub
+
+```text
+docs: add agent system transparency document
+- docs/agent-system.md
+
+feat: Phase C CDO — UX flows and wireframes spec (docs/05)
+- docs/05-ux-flows-and-wireframes.md
+
+docs: add user flow diagrams index — 6 FigJam flows (Phase C CDO)
+- assets/user-flows/README.md
+
+docs: add wireframes folder with corrected Figma Make prompts
+- assets/wireframes/README.md
+- docs/ai-build-log.md (Session 004)
+- CLAUDE.md (updated status and next steps)
+```
+
+#### 004 — Key insight
+
+**The CPO+CDO review caught 10 corrections across 6 flows that would have created friction in wireframe generation** — the most critical being: (1) empty states were missing entirely from Flows 4 and 5 (retention-critical screens), (2) Flow 6 lacked an explicit regulatory constraint on data display format, and (3) Flow 3 only covered the 2h notification variant. The formal review step proves its value even in an agentic system — agent outputs benefit from agent cross-review before committing artifacts.
+
+**The Figma MCP limitation is real but manageable:** the official Figma MCP can read designs and create FigJam flow diagrams, but cannot create Figma design files or wireframes. Figma Make prompts bridge this gap — they're the artifact that converts CDO spec into visual output, with the human (Alex) controlling the actual generation on his personal account.
+
+#### 004 — Next step
+
+Phase D — Build. Chief of Staff activates CTO.
+
+CTO reads:
+- `docs/04-prd-lite.md` — CPO PRD-Lite (especially Section 7: hard constraints + Section 8: functional flows)
+- `docs/05-ux-flows-and-wireframes.md` — CDO full spec (especially the Handoff to CTO section: 6 open questions)
+
+CTO produces:
+- `docs/06-tech-architecture.md` — stack decisions, data model, AI integration choices, infra approach
+- `docs/07-implementation-plan.md` — phased build plan, milestones, week-by-week breakdown
+
+---
+
 <!-- TEMPLATE FOR FUTURE SESSIONS — copy and fill in
 
 ### Session 00N — YYYY-MM-DD
