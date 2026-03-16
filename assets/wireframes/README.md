@@ -2,10 +2,12 @@
 
 > Prompts for generating low-fidelity wireframes in Figma Make.
 >
-> **Phase:** C — Definition
-> **CDO Owner:** CDO agent (reviewed and corrected by CPO + CDO, 2026-03-02)
-> **Source spec:** `docs/05-ux-flows-and-wireframes.md`
+> **Phase:** D — Build (updated from Phase C)
+> **CDO Owner:** CDO agent (Phase D revision 2026-03-04)
+> **Source spec:** `docs/05-ux-flows-and-wireframes.md` v2.0
 > **Flow navigation diagrams:** `assets/user-flows/README.md`
+>
+> **v2.0 changes (Phase D all-hands):** Flow 3 added Frame 3.N3 (symptom nudge notification). Flow 5 Screen 5.2: removed bar chart → text table + HCP share link button. Flow 6 Screen 6.1: removed symptom timeline table → two data rows only.
 
 ---
 
@@ -25,7 +27,7 @@
 |------|---------|---------------------|-----------------|
 | Flow 1 — Onboarding | 7 + advisory branch | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/aaa9d987-8b28-4539-9897-79d6b0091755?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
 | Flow 2 — Meal Log Entry | 5 + 2 states | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/e45a5038-4477-4cad-92a3-06cf036e950f?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
-| Flow 3 — Delayed Symptom Check-in | 1 + 2 notification variants | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/53d4b549-eb1a-466e-ac60-50afd24f15bb?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
+| Flow 3 — Delayed Symptom Check-in | 1 + 2 notification variants + 1 nudge notification | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/53d4b549-eb1a-466e-ac60-50afd24f15bb?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
 | Flow 4 — Pattern View (My Log) | 3 + ingredient view + empty state | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/33f647ac-4b3c-4003-b4c7-2b0ba11d5b0d?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
 | Flow 5 — PDF Export | 2 + empty state | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/96abfbc4-8cf6-4d07-b6e8-1d8c736168f3?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
 | Flow 6 — Trigger Alert Detail | 1 + 3 exit paths | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/b307ebcc-59b4-411b-8fed-7cc0e315dbdd?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
@@ -155,11 +157,11 @@ after 3 seconds if not tapped — the day counter is the primary streak mechanic
 
 ---
 
-### Flow 3 — Delayed Symptom Check-in (2 notification variants + 1 screen)
+### Flow 3 — Delayed Symptom Check-in (2 notification variants + 1 nudge notification + 1 screen)
 
 ```
 Create low-fidelity wireframes for the delayed symptom check-in flow of Nutrace (a food
-and symptom diary app). Design 3 frames in iPhone 16 Pro frame size, arranged horizontally.
+and symptom diary app). Design 4 frames in iPhone 16 Pro frame size, arranged horizontally.
 Wireframe style: white backgrounds, gray fills, black text, no color. Label each frame.
 
 FRAME 3.N1 — Lock Screen Notification (2h variant)
@@ -172,6 +174,12 @@ FRAME 3.N2 — Lock Screen Notification (4h variant)
 Same layout as 3.N1. Notification body changes to: "How are you feeling 4 hours after
 your lunch?" Time: 16:32. This is the same screen with dynamic copy — both 2h and 4h
 notifications trigger identical UI with different text.
+
+FRAME 3.N3 — Lock Screen Notification (Symptom Nudge — 2 days without symptoms)
+Same lock screen layout as 3.N1 and 3.N2. Notification body: "How did you feel after
+your last meal? Add a symptom note — your doctor needs this data." No time reference.
+Add a small annotation note below the frame: "Triggered when user has logged meals for
+2+ days but has zero symptom entries in that period. Sends once per 48h."
 
 SCREEN 3.1 — Quick Symptom Entry
 Minimal layout — single-purpose screen. Top bar: X close on left, "Save →" on right.
@@ -268,10 +276,13 @@ Top bar: X close on left, "PDF Preview" as title. A scrollable PDF preview frame
 document layout (not a mobile UI — this is a paper document representation):
 Header: "NUTRACE FOOD & SYMPTOM DIARY" bold. Fields: "Patient:", "Prior condition:
 [if provided at onboarding]", "Period:", "Generated:". Section "NOTE FOR DOCTOR" (if
-added). Section "TOP PATTERNS": two rows with colored dot placeholders (filled circle =
-high, half-filled = medium) and pattern description text. Section "SYMPTOM OVERVIEW":
-small bar chart placeholder (14 bars, varying heights). Below preview: text "Scroll to see
-full log ↓". Full-width primary button: "Share / Export ↑" with share icon.
+added). Section "SYMPTOM OVERVIEW — 14 DAYS": one line of plain text, two values side
+by side: "Symptomatic days: 8 / 14" and "Average severity: 3.2 / 5". No bar chart.
+Section "TOP PATTERNS": two rows with filled circle placeholders (high/medium) and
+pattern description text. Below preview: text "Scroll to see full log ↓".
+Below preview frame: two full-width buttons stacked: primary "Share / Export ↑" with
+share icon, and secondary outlined "Generate doctor link 🔗" with a note beside it
+"(opens in any browser — no login needed)".
 ```
 
 ---
@@ -293,20 +304,14 @@ SECTION 1 — Header
 Warning triangle icon (small, ~20px) + ingredient name as large title: "About Parmesan"
 
 SECTION 2 — Stats from user's own log
-Sub-label: "In your last 14 days:". Two data rows:
+Sub-label: "In your last 14 days:". Two data rows only:
   "Meals containing parmesan:   5"
   "Meals with symptoms after:   3"
-IMPORTANT: display as counts only ("3 out of 5 meals") — no percentages, no statistical
-language. This is the user's personal log data, not population research.
+IMPORTANT: display as counts only — no percentages, no statistical language, no timeline
+table. This is the MVP version: two numbers, nothing else. The symptom-by-meal timeline
+is deferred to V1.1.
 
-SECTION 3 — Symptom timeline
-Label: "When symptoms appeared:". Small bordered table or list — 3 rows, each showing:
-date, meal name, severity face placeholder, time offset. Example:
-  "Mon 24 Feb · Lunch    [face] +2h"
-  "Wed 19 Feb · Dinner   [face] +1h"
-  "Sat 15 Feb · Lunch    [face] +2h"
-
-SECTION 4 — Inline disclaimer
+SECTION 3 — Inline disclaimer
 Horizontal divider. Italic or lighter-weight text: "This is a pattern from your log —
 not a diagnosis. Share this with your doctor before making any changes to your diet."
 
@@ -332,7 +337,20 @@ Corrections applied in this document vs. original prompts generated in the sessi
 | Flow 6 | Added explicit constraint: counts only, no percentages, no statistical language — regulatory requirement |
 
 **FigJam corrections to apply manually:**
+
 - Flow 2: rename node from "Trigger Check" → "Ingredient Review + Trigger Alert"
-- Flow 3: add note that both notification paths render the same screen with dynamic copy
+- Flow 3: add note that both notification paths render the same screen with dynamic copy; add 3.N3 nudge node
 - Flow 4: add empty state (0 entries) as a node before the <3 days state
 - Flow 5: add empty state node as entry point when no data exists
+
+---
+
+## CDO Revision Notes — Phase D (2026-03-04)
+
+Changes applied to prompts vs. Phase C version, following all-hands review (docs/08) and founder risk mitigations (docs/09):
+
+| Flow | Change |
+| ---- | ------ |
+| Flow 3 | Added Frame 3.N3 — symptom nudge notification (triggered when user logs meals for 2+ days with zero symptom entries) |
+| Flow 5 — Screen 5.2 | Removed bar chart placeholder. Replaced SYMPTOM OVERVIEW with plain text: "Symptomatic days: X / 14 — Average severity: X.X / 5". Added second button: "Generate doctor link 🔗" below the native share button |
+| Flow 6 — Screen 6.1 | Removed symptom timeline table (3-row per-meal breakdown). MVP shows only two counts: meals containing ingredient + meals with symptoms. Timeline deferred to V1.1 |
