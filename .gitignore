@@ -1,0 +1,61 @@
+# ==============================================================================
+# Nutrace — .gitignore
+# Governance: see PUBLISHING_POLICY.md and PUBLIC_PRIVATE_MAP.md
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# SECRETS — never commit
+# ------------------------------------------------------------------------------
+.mcp.json
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*credentials*
+secrets/
+
+# ------------------------------------------------------------------------------
+# PRIVATE: Claude Code operating system
+# Keep the raw agent definitions, operational rules, and reusable skills
+# local-only. The existence and high-level roles of these agents are
+# documented publicly in docs/public/nutrace-technical-delivery-model.md.
+# Only .claude/README.md and .claude/settings.json are tracked.
+# ------------------------------------------------------------------------------
+.claude/agents/
+.claude/rules/
+.claude/skills/
+.claude/settings.local.json
+.claude/cache/
+.claude/logs/
+
+# ------------------------------------------------------------------------------
+# OS / editor
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ------------------------------------------------------------------------------
+# Node / Python build artifacts
+# ------------------------------------------------------------------------------
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+.next/
+.cache/
+
+# ------------------------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

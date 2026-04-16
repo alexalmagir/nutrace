@@ -6,7 +6,35 @@
 
 ---
 
-## The Problem
+## Important Notice
+
+This repository is published as a **showcase and portfolio**, not as open-source software.
+
+- Source code, docs, research, architecture, and design artifacts are **all rights reserved** — see [LICENSE](LICENSE).
+- Visible material demonstrates how a Senior Technical PM works end-to-end with AI tools. It is **not** a template you can clone, modify, or use commercially.
+- The AI agent system that builds Nutrace is partially private. Raw agent prompts and operational rules are intentionally gitignored — see [`PUBLISHING_POLICY.md`](PUBLISHING_POLICY.md) and [`PUBLIC_PRIVATE_MAP.md`](PUBLIC_PRIVATE_MAP.md).
+- Nutrace is a data-capture and journaling tool. It is **not a medical device** and does **not** provide medical advice, diagnosis, or treatment.
+
+---
+
+## Start here
+
+| You want to… | Read |
+|---|---|
+| Understand the product in one minute | [`docs/public/project-overview.md`](docs/public/project-overview.md) |
+| See the market evidence | [`docs/public/market-research-summary.md`](docs/public/market-research-summary.md) |
+| See how discovery was run | [`docs/public/discovery-summary.md`](docs/public/discovery-summary.md) |
+| See what we're actually building | [`docs/public/prd-lite.md`](docs/public/prd-lite.md) |
+| Understand the architecture | [`docs/public/architecture-overview.md`](docs/public/architecture-overview.md) |
+| See the AI-native team behind it | [`docs/public/agent-system-overview.md`](docs/public/agent-system-overview.md) |
+| See the repository layout | [`docs/public/repository-structure.md`](docs/public/repository-structure.md) |
+| See cross-session lessons | [`docs/public/lessons-learned.md`](docs/public/lessons-learned.md) |
+
+Full internal docs live in [`docs/`](docs/) (`00-project-charter.md` through `10-validation-experiments.md`).
+
+---
+
+## The problem
 
 People with IBS, IBD, food intolerances, and undiagnosed digestive symptoms are told to keep a food diary. Almost nobody does it — because logging every meal manually is tedious and they forget to do it mid-symptoms.
 
@@ -16,7 +44,7 @@ The result: months of wasted consultations, delayed diagnoses, and frustrated pa
 
 ---
 
-## What Nutrace Does
+## What Nutrace does
 
 | Step | What you do | What Nutrace does |
 |------|-------------|-------------------|
@@ -29,9 +57,9 @@ The result: months of wasted consultations, delayed diagnoses, and frustrated pa
 
 ---
 
-## Who It's For
+## Who it's for
 
-- People aged 20–50 with recurring digestive symptoms (bloating, abdominal pain, irregular bowel, nausea)
+- Adults 20–50 with recurring digestive symptoms (bloating, abdominal pain, irregular bowel, nausea)
 - Currently consulting — or about to consult — a gastroenterologist or registered dietitian
 - Motivated: their symptoms affect work and daily life
 
@@ -43,37 +71,33 @@ The result: months of wasted consultations, delayed diagnoses, and frustrated pa
 
 | Phase | Status |
 |-------|--------|
-| Phase A — Ideation / Selection | ✅ GO (Founder scorecard: 43/50) |
-| Phase B — Validation (H1 + H2) | ✅ PASSED (H1: 14/15, H2: 15/15) |
-| Phase C — Definition (PRD-Lite) | In progress |
-| Phase D — Build | Pending |
-| Phase E — Launch | Pending |
-
-**Active docs:**
-- [Project Charter](docs/00-project-charter.md) — GO decision, ICP, scope
-- [Founder Venture Brief](docs/01-founder-venture-brief.md) — market data, scorecard, 0→1 roadmap
-- [Validation Plan and Results](docs/03-validation-plan-and-results.md) — H1 + H2 results, 30 interviews, user/clinical segmentation
-- [AI Build Log](docs/ai-build-log.md) — running log of AI-assisted build sessions
+| A — Ideation / Selection | ✅ GO (Founder scorecard: 43/50) |
+| B — Validation (H1 + H2) | ✅ PASSED (H1: 14/15, H2: 15/15) |
+| C — Definition (PRD + UX + architecture) | ✅ Done |
+| D — Build | 🔄 Validation experiments E1–E7 in progress |
+| E — Launch | Pending |
 
 ---
 
-## Tech Stack (planned)
+## Tech stack
 
-| Layer | Approach |
-|-------|----------|
-| Frontend | React Native (iOS + Android) or Next.js PWA |
-| Backend | FastAPI (Python) |
-| Vision AI | GPT-4V / Gemini Vision |
+| Layer | Choice |
+|-------|--------|
+| Mobile | React Native + Expo (iOS + Android) |
+| Backend | FastAPI (Python) on Railway |
+| Vision AI | GPT-4o Vision |
 | Voice/STT | OpenAI Whisper API |
-| Storage | Supabase |
-| Export | PDF generation |
+| DB + Auth + Storage | Supabase (EU region) |
+| PDF export | WeasyPrint |
+
+See [`docs/public/architecture-overview.md`](docs/public/architecture-overview.md) for the full rationale.
 
 ---
 
-## Built in Public
+## Built in public
 
-This project is being built end-to-end in public — product decisions, architecture, code, and launch — by a Senior Technical PM as a demonstration of 0→1 execution with AI tools.
+Built end-to-end in public — product decisions, architecture, code, and launch — by a Senior Technical PM as a demonstration of 0→1 execution with AI tools.
 
-Every doc, decision, and commit is real work, not a tutorial.
+Every doc, decision, and commit is real work, not a tutorial. Session-by-session log: [`docs/ai-build-log.md`](docs/ai-build-log.md).
 
-**GitHub:** [alexalmagir/nutrace](https://github.com/alexalmagir/nutrace)
+**GitHub:** [alexalmagir/nutrace](https://github.com/alexalmagir/nutrace) · **Contact:** alex.almagir@gmail.com
