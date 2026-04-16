@@ -91,7 +91,7 @@ High-fidelity screens are generated with Figma Make from the prompts in [`assets
 
 | Flow | Status | Link |
 |---|---|---|
-| Flow 1 — Onboarding | ✅ Done | [Figma Make](https://www.figma.com/make/ZSCv5aTcoJ7PBc04n9lQsf/Nutrace-Flow-1---Onboarding?fullscreen=1&t=bKmQNsHUUa7daLCt-1) |
+| Flow 1 — Onboarding | ✅ Done | [Figma Make](https://claim-manage-96224058.figma.site/) |
 | Flow 2 — Meal Log Entry | Pending | — |
 | Flow 3 — Delayed Symptom Check-in | Pending | — |
 | Flow 4 — Pattern View / My Log | Pending | — |
