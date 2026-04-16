@@ -99,6 +99,66 @@ SCREEN 1.7 — First Meal Prompt
 Centered. Large checkmark or success icon. Title: "You're ready". Body (2 lines): "Next
 time you eat, take a photo before your first bite. That's all you need to do." Primary
 button with camera icon "Log my first meal". Ghost button "I'll do it later".
+
+---
+
+STYLE SYSTEM / VISUAL CONSISTENCY
+
+This flow is part of a larger mobile product, so the visual style must remain consistent across all prototypes.
+
+Create a polished, high-fidelity mobile app aesthetic for a modern AI-powered wellness / nutrition product. The product should feel premium, calm, warm, trustworthy, and visually refined — closer to a beautifully crafted consumer wellness app than to a clinical or enterprise tool.
+
+VISUAL DIRECTION
+- Avoid black-and-white only UI.
+- Avoid harsh borders, boxed layouts, and wireframe-like screens.
+- Prefer a soft, elegant, premium visual language.
+- Use borderless or near-borderless surfaces with subtle elevation, tonal contrast, soft shadows, and layered backgrounds.
+- Use generous rounded corners throughout the interface.
+- Favor visual hierarchy through spacing, typography, color, and depth rather than visible outlines.
+- Make every screen feel intentionally designed, polished, and demo-ready.
+
+COLOR SYSTEM
+- Use a cohesive, tasteful palette with warmth and personality.
+- Prefer soft off-white, ivory, cream, or lightly tinted backgrounds instead of pure white.
+- Use muted but rich accent colors such as sage green, muted teal, soft coral, peach, lavender, dusty plum, pale mint, or warm sand.
+- Text should use charcoal or dark desaturated tones instead of pure black.
+- Keep contrast accessible and readability high.
+- Use color consistently across all screens and flows so the product feels like one unified design system.
+
+COMPONENT STYLE
+- Use elegant borderless cards or softly separated surfaces.
+- Use large rounded buttons with modern, clean typography.
+- Inputs, selectors, chips, pills, and segmented controls should feel soft and minimal, using fills and tonal contrast rather than strong borders.
+- Icons should be simple, friendly, modern, and slightly rounded.
+- Progress, states, summaries, and feedback elements should feel visually delightful, not dashboard-like.
+- Use subtle gradients or tinted surfaces where appropriate to add depth and polish.
+
+LAYOUT & TYPOGRAPHY
+- Mobile-first iPhone-style composition.
+- Use generous whitespace and clear vertical rhythm.
+- Keep layouts breathable, calm, and uncluttered.
+- Use a modern sans-serif style with strong hierarchy: elegant headings, readable body text, and concise supporting copy.
+- Headings should feel premium and calming, not technical or clinical.
+
+PRODUCT FEEL
+- Warm, intelligent, supportive, and emotionally safe.
+- Wellness-oriented, not hospital-like.
+- Trustworthy and modern, with a subtle AI-native feel.
+- Suitable for user testing, founder demos, and early-stage stakeholder presentations.
+
+CONSISTENCY REQUIREMENT
+Maintain the same design language across all flows:
+- same palette family
+- same button style
+- same card treatment
+- same corner radius logic
+- same spacing rhythm
+- same typography hierarchy
+- same input style
+- same icon style
+- same visual tone
+
+The result should feel like one coherent product, not separate concepts generated independently.
 ```
 
 ---
@@ -153,6 +213,66 @@ Centered layout. Large checkmark icon. Title: "Meal logged". Subtitle (dynamic b
 show day 3 example): "Day 3 of your log. First pattern insight coming soon." Two buttons,
 equal visual weight: "View my log" and "Log another meal". Note: this screen auto-dismisses
 after 3 seconds if not tapped — the day counter is the primary streak mechanic.
+
+---
+
+STYLE SYSTEM / VISUAL CONSISTENCY
+
+This flow is part of a larger mobile product, so the visual style must remain consistent across all prototypes.
+
+Create a polished, high-fidelity mobile app aesthetic for a modern AI-powered wellness / nutrition product. The product should feel premium, calm, warm, trustworthy, and visually refined — closer to a beautifully crafted consumer wellness app than to a clinical or enterprise tool.
+
+VISUAL DIRECTION
+- Avoid black-and-white only UI.
+- Avoid harsh borders, boxed layouts, and wireframe-like screens.
+- Prefer a soft, elegant, premium visual language.
+- Use borderless or near-borderless surfaces with subtle elevation, tonal contrast, soft shadows, and layered backgrounds.
+- Use generous rounded corners throughout the interface.
+- Favor visual hierarchy through spacing, typography, color, and depth rather than visible outlines.
+- Make every screen feel intentionally designed, polished, and demo-ready.
+
+COLOR SYSTEM
+- Use a cohesive, tasteful palette with warmth and personality.
+- Prefer soft off-white, ivory, cream, or lightly tinted backgrounds instead of pure white.
+- Use muted but rich accent colors such as sage green, muted teal, soft coral, peach, lavender, dusty plum, pale mint, or warm sand.
+- Text should use charcoal or dark desaturated tones instead of pure black.
+- Keep contrast accessible and readability high.
+- Use color consistently across all screens and flows so the product feels like one unified design system.
+
+COMPONENT STYLE
+- Use elegant borderless cards or softly separated surfaces.
+- Use large rounded buttons with modern, clean typography.
+- Inputs, selectors, chips, pills, and segmented controls should feel soft and minimal, using fills and tonal contrast rather than strong borders.
+- Icons should be simple, friendly, modern, and slightly rounded.
+- Progress, states, summaries, and feedback elements should feel visually delightful, not dashboard-like.
+- Use subtle gradients or tinted surfaces where appropriate to add depth and polish.
+
+LAYOUT & TYPOGRAPHY
+- Mobile-first iPhone-style composition.
+- Use generous whitespace and clear vertical rhythm.
+- Keep layouts breathable, calm, and uncluttered.
+- Use a modern sans-serif style with strong hierarchy: elegant headings, readable body text, and concise supporting copy.
+- Headings should feel premium and calming, not technical or clinical.
+
+PRODUCT FEEL
+- Warm, intelligent, supportive, and emotionally safe.
+- Wellness-oriented, not hospital-like.
+- Trustworthy and modern, with a subtle AI-native feel.
+- Suitable for user testing, founder demos, and early-stage stakeholder presentations.
+
+CONSISTENCY REQUIREMENT
+Maintain the same design language across all flows:
+- same palette family
+- same button style
+- same card treatment
+- same corner radius logic
+- same spacing rhythm
+- same typography hierarchy
+- same input style
+- same icon style
+- same visual tone
+
+The result should feel like one coherent product, not separate concepts generated independently.
 ```
 
 ---
@@ -190,6 +310,66 @@ circles representing severity faces, numbered 1–5 below each. Labels below the
 Below a horizontal divider: "Optional: add a note". Short text input field (1 line,
 placeholder text). Below: secondary button with mic icon "Add voice note". The emoji
 tap is the primary action — all other inputs are optional.
+
+---
+
+STYLE SYSTEM / VISUAL CONSISTENCY
+
+This flow is part of a larger mobile product, so the visual style must remain consistent across all prototypes.
+
+Create a polished, high-fidelity mobile app aesthetic for a modern AI-powered wellness / nutrition product. The product should feel premium, calm, warm, trustworthy, and visually refined — closer to a beautifully crafted consumer wellness app than to a clinical or enterprise tool.
+
+VISUAL DIRECTION
+- Avoid black-and-white only UI.
+- Avoid harsh borders, boxed layouts, and wireframe-like screens.
+- Prefer a soft, elegant, premium visual language.
+- Use borderless or near-borderless surfaces with subtle elevation, tonal contrast, soft shadows, and layered backgrounds.
+- Use generous rounded corners throughout the interface.
+- Favor visual hierarchy through spacing, typography, color, and depth rather than visible outlines.
+- Make every screen feel intentionally designed, polished, and demo-ready.
+
+COLOR SYSTEM
+- Use a cohesive, tasteful palette with warmth and personality.
+- Prefer soft off-white, ivory, cream, or lightly tinted backgrounds instead of pure white.
+- Use muted but rich accent colors such as sage green, muted teal, soft coral, peach, lavender, dusty plum, pale mint, or warm sand.
+- Text should use charcoal or dark desaturated tones instead of pure black.
+- Keep contrast accessible and readability high.
+- Use color consistently across all screens and flows so the product feels like one unified design system.
+
+COMPONENT STYLE
+- Use elegant borderless cards or softly separated surfaces.
+- Use large rounded buttons with modern, clean typography.
+- Inputs, selectors, chips, pills, and segmented controls should feel soft and minimal, using fills and tonal contrast rather than strong borders.
+- Icons should be simple, friendly, modern, and slightly rounded.
+- Progress, states, summaries, and feedback elements should feel visually delightful, not dashboard-like.
+- Use subtle gradients or tinted surfaces where appropriate to add depth and polish.
+
+LAYOUT & TYPOGRAPHY
+- Mobile-first iPhone-style composition.
+- Use generous whitespace and clear vertical rhythm.
+- Keep layouts breathable, calm, and uncluttered.
+- Use a modern sans-serif style with strong hierarchy: elegant headings, readable body text, and concise supporting copy.
+- Headings should feel premium and calming, not technical or clinical.
+
+PRODUCT FEEL
+- Warm, intelligent, supportive, and emotionally safe.
+- Wellness-oriented, not hospital-like.
+- Trustworthy and modern, with a subtle AI-native feel.
+- Suitable for user testing, founder demos, and early-stage stakeholder presentations.
+
+CONSISTENCY REQUIREMENT
+Maintain the same design language across all flows:
+- same palette family
+- same button style
+- same card treatment
+- same corner radius logic
+- same spacing rhythm
+- same typography hierarchy
+- same input style
+- same icon style
+- same visual tone
+
+The result should feel like one coherent product, not separate concepts generated independently.
 ```
 
 ---
@@ -241,6 +421,66 @@ Section "Ingredients". Sub-label: "AI-detected · Tap to edit". Ingredient tags 
 comma-separated list. Horizontal divider. Section "Symptoms". Three rows:
 "Immediately: [face emoji] + text note", "+2h: [face emoji] + text note",
 "+4h: not recorded". Bottom: two equal buttons "Edit entry" (secondary) and "Delete" (ghost).
+
+---
+
+STYLE SYSTEM / VISUAL CONSISTENCY
+
+This flow is part of a larger mobile product, so the visual style must remain consistent across all prototypes.
+
+Create a polished, high-fidelity mobile app aesthetic for a modern AI-powered wellness / nutrition product. The product should feel premium, calm, warm, trustworthy, and visually refined — closer to a beautifully crafted consumer wellness app than to a clinical or enterprise tool.
+
+VISUAL DIRECTION
+- Avoid black-and-white only UI.
+- Avoid harsh borders, boxed layouts, and wireframe-like screens.
+- Prefer a soft, elegant, premium visual language.
+- Use borderless or near-borderless surfaces with subtle elevation, tonal contrast, soft shadows, and layered backgrounds.
+- Use generous rounded corners throughout the interface.
+- Favor visual hierarchy through spacing, typography, color, and depth rather than visible outlines.
+- Make every screen feel intentionally designed, polished, and demo-ready.
+
+COLOR SYSTEM
+- Use a cohesive, tasteful palette with warmth and personality.
+- Prefer soft off-white, ivory, cream, or lightly tinted backgrounds instead of pure white.
+- Use muted but rich accent colors such as sage green, muted teal, soft coral, peach, lavender, dusty plum, pale mint, or warm sand.
+- Text should use charcoal or dark desaturated tones instead of pure black.
+- Keep contrast accessible and readability high.
+- Use color consistently across all screens and flows so the product feels like one unified design system.
+
+COMPONENT STYLE
+- Use elegant borderless cards or softly separated surfaces.
+- Use large rounded buttons with modern, clean typography.
+- Inputs, selectors, chips, pills, and segmented controls should feel soft and minimal, using fills and tonal contrast rather than strong borders.
+- Icons should be simple, friendly, modern, and slightly rounded.
+- Progress, states, summaries, and feedback elements should feel visually delightful, not dashboard-like.
+- Use subtle gradients or tinted surfaces where appropriate to add depth and polish.
+
+LAYOUT & TYPOGRAPHY
+- Mobile-first iPhone-style composition.
+- Use generous whitespace and clear vertical rhythm.
+- Keep layouts breathable, calm, and uncluttered.
+- Use a modern sans-serif style with strong hierarchy: elegant headings, readable body text, and concise supporting copy.
+- Headings should feel premium and calming, not technical or clinical.
+
+PRODUCT FEEL
+- Warm, intelligent, supportive, and emotionally safe.
+- Wellness-oriented, not hospital-like.
+- Trustworthy and modern, with a subtle AI-native feel.
+- Suitable for user testing, founder demos, and early-stage stakeholder presentations.
+
+CONSISTENCY REQUIREMENT
+Maintain the same design language across all flows:
+- same palette family
+- same button style
+- same card treatment
+- same corner radius logic
+- same spacing rhythm
+- same typography hierarchy
+- same input style
+- same icon style
+- same visual tone
+
+The result should feel like one coherent product, not separate concepts generated independently.
 ```
 
 ---
@@ -283,6 +523,66 @@ pattern description text. Below preview: text "Scroll to see full log ↓".
 Below preview frame: two full-width buttons stacked: primary "Share / Export ↑" with
 share icon, and secondary outlined "Generate doctor link 🔗" with a note beside it
 "(opens in any browser — no login needed)".
+
+---
+
+STYLE SYSTEM / VISUAL CONSISTENCY
+
+This flow is part of a larger mobile product, so the visual style must remain consistent across all prototypes.
+
+Create a polished, high-fidelity mobile app aesthetic for a modern AI-powered wellness / nutrition product. The product should feel premium, calm, warm, trustworthy, and visually refined — closer to a beautifully crafted consumer wellness app than to a clinical or enterprise tool.
+
+VISUAL DIRECTION
+- Avoid black-and-white only UI.
+- Avoid harsh borders, boxed layouts, and wireframe-like screens.
+- Prefer a soft, elegant, premium visual language.
+- Use borderless or near-borderless surfaces with subtle elevation, tonal contrast, soft shadows, and layered backgrounds.
+- Use generous rounded corners throughout the interface.
+- Favor visual hierarchy through spacing, typography, color, and depth rather than visible outlines.
+- Make every screen feel intentionally designed, polished, and demo-ready.
+
+COLOR SYSTEM
+- Use a cohesive, tasteful palette with warmth and personality.
+- Prefer soft off-white, ivory, cream, or lightly tinted backgrounds instead of pure white.
+- Use muted but rich accent colors such as sage green, muted teal, soft coral, peach, lavender, dusty plum, pale mint, or warm sand.
+- Text should use charcoal or dark desaturated tones instead of pure black.
+- Keep contrast accessible and readability high.
+- Use color consistently across all screens and flows so the product feels like one unified design system.
+
+COMPONENT STYLE
+- Use elegant borderless cards or softly separated surfaces.
+- Use large rounded buttons with modern, clean typography.
+- Inputs, selectors, chips, pills, and segmented controls should feel soft and minimal, using fills and tonal contrast rather than strong borders.
+- Icons should be simple, friendly, modern, and slightly rounded.
+- Progress, states, summaries, and feedback elements should feel visually delightful, not dashboard-like.
+- Use subtle gradients or tinted surfaces where appropriate to add depth and polish.
+
+LAYOUT & TYPOGRAPHY
+- Mobile-first iPhone-style composition.
+- Use generous whitespace and clear vertical rhythm.
+- Keep layouts breathable, calm, and uncluttered.
+- Use a modern sans-serif style with strong hierarchy: elegant headings, readable body text, and concise supporting copy.
+- Headings should feel premium and calming, not technical or clinical.
+
+PRODUCT FEEL
+- Warm, intelligent, supportive, and emotionally safe.
+- Wellness-oriented, not hospital-like.
+- Trustworthy and modern, with a subtle AI-native feel.
+- Suitable for user testing, founder demos, and early-stage stakeholder presentations.
+
+CONSISTENCY REQUIREMENT
+Maintain the same design language across all flows:
+- same palette family
+- same button style
+- same card treatment
+- same corner radius logic
+- same spacing rhythm
+- same typography hierarchy
+- same input style
+- same icon style
+- same visual tone
+
+The result should feel like one coherent product, not separate concepts generated independently.
 ```
 
 ---
@@ -319,6 +619,66 @@ BOTTOM ACTIONS — two stacked buttons
 Primary: "Continue logging →" (proceed to save entry as-is)
 Ghost: "Remove from this entry" (removes the flagged ingredient before saving, does not
 delete it from log history)
+
+---
+
+STYLE SYSTEM / VISUAL CONSISTENCY
+
+This flow is part of a larger mobile product, so the visual style must remain consistent across all prototypes.
+
+Create a polished, high-fidelity mobile app aesthetic for a modern AI-powered wellness / nutrition product. The product should feel premium, calm, warm, trustworthy, and visually refined — closer to a beautifully crafted consumer wellness app than to a clinical or enterprise tool.
+
+VISUAL DIRECTION
+- Avoid black-and-white only UI.
+- Avoid harsh borders, boxed layouts, and wireframe-like screens.
+- Prefer a soft, elegant, premium visual language.
+- Use borderless or near-borderless surfaces with subtle elevation, tonal contrast, soft shadows, and layered backgrounds.
+- Use generous rounded corners throughout the interface.
+- Favor visual hierarchy through spacing, typography, color, and depth rather than visible outlines.
+- Make every screen feel intentionally designed, polished, and demo-ready.
+
+COLOR SYSTEM
+- Use a cohesive, tasteful palette with warmth and personality.
+- Prefer soft off-white, ivory, cream, or lightly tinted backgrounds instead of pure white.
+- Use muted but rich accent colors such as sage green, muted teal, soft coral, peach, lavender, dusty plum, pale mint, or warm sand.
+- Text should use charcoal or dark desaturated tones instead of pure black.
+- Keep contrast accessible and readability high.
+- Use color consistently across all screens and flows so the product feels like one unified design system.
+
+COMPONENT STYLE
+- Use elegant borderless cards or softly separated surfaces.
+- Use large rounded buttons with modern, clean typography.
+- Inputs, selectors, chips, pills, and segmented controls should feel soft and minimal, using fills and tonal contrast rather than strong borders.
+- Icons should be simple, friendly, modern, and slightly rounded.
+- Progress, states, summaries, and feedback elements should feel visually delightful, not dashboard-like.
+- Use subtle gradients or tinted surfaces where appropriate to add depth and polish.
+
+LAYOUT & TYPOGRAPHY
+- Mobile-first iPhone-style composition.
+- Use generous whitespace and clear vertical rhythm.
+- Keep layouts breathable, calm, and uncluttered.
+- Use a modern sans-serif style with strong hierarchy: elegant headings, readable body text, and concise supporting copy.
+- Headings should feel premium and calming, not technical or clinical.
+
+PRODUCT FEEL
+- Warm, intelligent, supportive, and emotionally safe.
+- Wellness-oriented, not hospital-like.
+- Trustworthy and modern, with a subtle AI-native feel.
+- Suitable for user testing, founder demos, and early-stage stakeholder presentations.
+
+CONSISTENCY REQUIREMENT
+Maintain the same design language across all flows:
+- same palette family
+- same button style
+- same card treatment
+- same corner radius logic
+- same spacing rhythm
+- same typography hierarchy
+- same input style
+- same icon style
+- same visual tone
+
+The result should feel like one coherent product, not separate concepts generated independently.
 ```
 
 ---
