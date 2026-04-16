@@ -53,7 +53,7 @@ nutrace/
 │   └── public/                            🌐 curated portfolio layer
 ├── assets/
 │   ├── user-flows/                        🌐 FigJam navigation diagrams
-│   ├── wireframes/                        🌐 Figma Make prompts + descriptions
+│   ├── wireframes/                        🌐 Figma Make prompts + generated designs (Flow 1 live)
 │   └── social/                            🌐 social media assets
 └── src/                                   🌐 source code (case-by-case)
 ```

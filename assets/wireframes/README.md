@@ -25,7 +25,7 @@
 
 | Flow | Screens | FigJam (navigation) | Figma wireframe |
 |------|---------|---------------------|-----------------|
-| Flow 1 — Onboarding | 7 + advisory branch | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/3d9a8a89-c4f7-41e9-9218-4496b0e4c88c?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
+| Flow 1 — Onboarding | 7 + advisory branch | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/3d9a8a89-c4f7-41e9-9218-4496b0e4c88c?utm_source=claude&utm_content=edit_in_figjam) | [Figma Make](https://www.figma.com/make/ZSCv5aTcoJ7PBc04n9lQsf/Nutrace-Flow-1---Onboarding?fullscreen=1&t=bKmQNsHUUa7daLCt-1) |
 | Flow 2 — Meal Log Entry | 5 + 2 states | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/5d7b726f-a207-43ab-9fd7-cd0d4d82fd36?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
 | Flow 3 — Delayed Symptom Check-in | 1 + 2 notification variants + 1 nudge notification | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/bad954b4-f4bf-4ab3-bb63-72e386e93cdf?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |
 | Flow 4 — Pattern View (My Log) | 3 + ingredient view + empty state | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/cd8c2f39-0e99-4b86-b1ac-35dd4514ba68?utm_source=claude&utm_content=edit_in_figjam) | _to be added_ |

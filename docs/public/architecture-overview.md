@@ -84,3 +84,16 @@ MVP algorithm: fires a pattern for a given ingredient when the user has ≥3 day
 Beta success gate = one clinician's qualitative review of a real patient's PDF. That review is the GO/NO-GO for V1.5 investment.
 
 Full architecture and implementation plan are in internal documentation.
+
+## UX designs
+
+High-fidelity screens are generated with Figma Make from the prompts in [`assets/wireframes/`](../../assets/wireframes/README.md).
+
+| Flow | Status | Link |
+|---|---|---|
+| Flow 1 — Onboarding | ✅ Done | [Figma Make](https://www.figma.com/make/ZSCv5aTcoJ7PBc04n9lQsf/Nutrace-Flow-1---Onboarding?fullscreen=1&t=bKmQNsHUUa7daLCt-1) |
+| Flow 2 — Meal Log Entry | Pending | — |
+| Flow 3 — Delayed Symptom Check-in | Pending | — |
+| Flow 4 — Pattern View / My Log | Pending | — |
+| Flow 5 — PDF Export | Pending | — |
+| Flow 6 — Trigger Alert Detail | Pending | — |
