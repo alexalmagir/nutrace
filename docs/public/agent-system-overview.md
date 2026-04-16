@@ -1,6 +1,6 @@
 # Agent System Overview
 
-> How Nutrace is built: a two-layer AI-native product organization. The raw agent definitions and operating rules are intentionally private — see [`PUBLISHING_POLICY.md`](../../PUBLISHING_POLICY.md).
+> How Nutrace is built: a two-layer AI-native product organization. The raw agent definitions, operating rules, and governance files are intentionally private.
 
 ---
 

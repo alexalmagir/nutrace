@@ -12,7 +12,7 @@ This repository is published as a **showcase and portfolio**, not as open-source
 
 - Source code, docs, research, architecture, and design artifacts are **all rights reserved** — see [LICENSE](LICENSE).
 - Visible material demonstrates how a Senior Technical PM works end-to-end with AI tools. It is **not** a template you can clone, modify, or use commercially.
-- The AI agent system that builds Nutrace is partially private. Raw agent prompts and operational rules are intentionally gitignored — see [`PUBLISHING_POLICY.md`](PUBLISHING_POLICY.md) and [`PUBLIC_PRIVATE_MAP.md`](PUBLIC_PRIVATE_MAP.md).
+- The AI agent system that builds Nutrace is partially private. Raw agent prompts, operational rules, and internal governance files are intentionally kept local. Public-facing summaries live in [`docs/public/`](docs/public/).
 - Nutrace is a data-capture and journaling tool. It is **not a medical device** and does **not** provide medical advice, diagnosis, or treatment.
 
 ---

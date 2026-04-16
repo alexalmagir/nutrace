@@ -38,7 +38,7 @@ All eight agents share a set of internal operating rules covering:
 - **Security** — least privilege, validated input, secret hygiene, escalation criteria
 - **Delivery** — small increments, narrow diffs, visible tradeoffs
 
-The raw rules files are gitignored — see [`PUBLISHING_POLICY.md`](../../PUBLISHING_POLICY.md).
+The raw rules files are gitignored. Governance and classification files are also private.
 
 ## Escalation chain
 

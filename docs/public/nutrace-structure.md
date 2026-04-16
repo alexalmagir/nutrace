@@ -8,17 +8,17 @@
 
 ```text
 nutrace/
-├── README.md                              ← public front door + restrictive notice
-├── LICENSE                                ← all rights reserved
-├── CLAUDE.md                              ← project memory for Claude
-├── PUBLISHING_POLICY.md                   ← nutrace governance
-├── PUBLIC_PRIVATE_MAP.md                  ← per-path classification
-├── .gitignore                             ← publishing control
-├── .mcp.json                              🔒 private — GitHub MCP (env-var token)
+├── README.md                              🌐 front door + restrictive notice
+├── LICENSE                                🌐 all rights reserved
+├── .gitignore                             🌐 publishing control
+├── CLAUDE.md                              🔒 operational memory (gitignored)
+├── PUBLISHING_POLICY.md                   🔒 internal governance (gitignored)
+├── PUBLIC_PRIVATE_MAP.md                  🔒 internal classification (gitignored)
+├── .mcp.json                              🔒 MCP config (gitignored)
 ├── .claude/
-│   ├── README.md                          🌐 public — explains what is private and why
+│   ├── README.md                          🌐 explains the agent system + why private
 │   ├── settings.json                      🌐 trivial workspace settings
-│   ├── agents/                            🔒 private — 8 technical agents
+│   ├── agents/                            🔒 8 technical agents (gitignored)
 │   │   ├── tech-lead.md
 │   │   ├── backend-engineer.md
 │   │   ├── frontend-engineer.md
@@ -27,14 +27,14 @@ nutrace/
 │   │   ├── refactoring-engineer.md
 │   │   ├── qa-engineer.md
 │   │   └── security-engineer.md
-│   ├── rules/                             🔒 private — 6 operational rules
+│   ├── rules/                             🔒 6 operational rules (gitignored)
 │   │   ├── coding-standards.md
 │   │   ├── architecture.md
 │   │   ├── testing.md
 │   │   ├── migrations.md
 │   │   ├── security.md
 │   │   └── delivery.md
-│   └── skills/                            🔒 private — reusable skills
+│   └── skills/                            🔒 reusable skills (gitignored)
 ├── docs/                                  🌐 full internal docs (already public)
 │   ├── 00-project-charter.md
 │   ├── 01-founder-venture-brief.md
@@ -58,12 +58,21 @@ nutrace/
 └── src/                                   🌐 source code (case-by-case)
 ```
 
-## Classification highlights
+## What is public
 
-- Every root-level file is public: `README.md`, `LICENSE`, `CLAUDE.md`, both governance files, `.gitignore`.
-- `.claude/README.md` and `.claude/settings.json` are public. Everything else under `.claude/` is gitignored.
-- Internal `docs/00`–`docs/10` are already publicly pushed (historical decision, preserved).
-- `docs/public/` is the curated portfolio-facing layer.
+- `README.md`, `LICENSE`, `.gitignore` — visible on GitHub
+- `.claude/README.md`, `.claude/settings.json` — explain the agent system without exposing internals
+- `docs/00`–`docs/10` — full product docs, already publicly pushed (historical decision, preserved)
+- `docs/public/` — curated portfolio-facing summaries
+
+## What is private
+
+- `CLAUDE.md` — operational memory for the agent system (session state, internal context)
+- `PUBLISHING_POLICY.md`, `PUBLIC_PRIVATE_MAP.md` — internal governance and classification criteria
+- `.mcp.json` — MCP server config with token references
+- `.claude/agents/`, `.claude/rules/`, `.claude/skills/` — raw operating logic
+
+All private files are gitignored. They exist locally but are never pushed to GitHub.
 
 ## Reading order for a visitor
 
@@ -74,7 +83,8 @@ nutrace/
 5. [`docs/public/prd-lite.md`](prd-lite.md) — what we're actually building
 6. [`docs/public/architecture-overview.md`](architecture-overview.md) — how it's built
 7. [`docs/public/agent-system-overview.md`](agent-system-overview.md) — the team behind it
-8. Optional deep dive: the full `docs/00`–`docs/10` files
+8. [`docs/public/claude-project-context.md`](claude-project-context.md) — project context and privacy model
+9. Optional deep dive: the full `docs/00`–`docs/10` files
 
 See also:
 - [`ai-product-builder-structure.md`](ai-product-builder-structure.md) — the studio above this product

@@ -16,11 +16,18 @@
 secrets/
 
 # ------------------------------------------------------------------------------
+# PRIVATE: operational memory + governance
+# CLAUDE.md is working memory for the agent system — not a public artifact.
+# Governance and classification files are internal controls.
+# ------------------------------------------------------------------------------
+CLAUDE.md
+PUBLISHING_POLICY.md
+PUBLIC_PRIVATE_MAP.md
+
+# ------------------------------------------------------------------------------
 # PRIVATE: Claude Code operating system
-# Keep the raw agent definitions, operational rules, and reusable skills
-# local-only. The existence and high-level roles of these agents are
-# documented publicly in docs/public/nutrace-technical-delivery-model.md.
-# Only .claude/README.md and .claude/settings.json are tracked.
+# Raw agent definitions, operational rules, and reusable skills stay local.
+# Public-facing summaries live in docs/public/.
 # ------------------------------------------------------------------------------
 .claude/agents/
 .claude/rules/

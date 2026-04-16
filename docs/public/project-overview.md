@@ -43,4 +43,4 @@ This is a public showcase repository. See:
 
 - [`repository-structure.md`](repository-structure.md) for the full tree
 - [`agent-system-overview.md`](agent-system-overview.md) for how the AI agent team works
-- [`PUBLISHING_POLICY.md`](../../PUBLISHING_POLICY.md) for what is public vs. private
+- [`claude-project-context.md`](claude-project-context.md) for how public and private layers are separated

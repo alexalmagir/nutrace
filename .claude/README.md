@@ -39,4 +39,4 @@ See the curated docs in [`docs/public/`](../docs/public/):
 
 ## Governance
 
-See [`PUBLISHING_POLICY.md`](../PUBLISHING_POLICY.md) and [`PUBLIC_PRIVATE_MAP.md`](../PUBLIC_PRIVATE_MAP.md) at the repository root.
+This repository follows a strict public/private separation. Governance and classification files are internal. Public-facing documentation lives in [`docs/public/`](../docs/public/).

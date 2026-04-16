@@ -17,9 +17,9 @@
 
 ```text
 AI Product Builder/                          ← LOCAL meta-workspace (not a git repo)
-├── CLAUDE.md                                🌐 studio entry point for Claude
-├── PUBLISHING_POLICY.md                     🌐 studio-level governance
-├── PUBLIC_PRIVATE_MAP.md                    🌐 studio-level classification
+├── CLAUDE.md                                🔒 operational memory (private)
+├── PUBLISHING_POLICY.md                     🔒 internal governance (private)
+├── PUBLIC_PRIVATE_MAP.md                    🔒 internal classification (private)
 ├── .mcp.json                                🔒 MCP config (token via env var)
 ├── .claude/
 │   ├── settings.json                        🔒 local
@@ -38,9 +38,9 @@ AI Product Builder/                          ← LOCAL meta-workspace (not a git
     └── nutrace/                             ← INDEPENDENT git repo → alexalmagir/nutrace
         ├── README.md                        🌐 front-door intro + restrictive notice
         ├── LICENSE                          🌐 all rights reserved
-        ├── CLAUDE.md                        🌐 project memory for Claude
-        ├── PUBLISHING_POLICY.md             🌐 nutrace-level governance
-        ├── PUBLIC_PRIVATE_MAP.md            🌐 nutrace-level classification
+        ├── CLAUDE.md                        🔒 operational memory (gitignored)
+        ├── PUBLISHING_POLICY.md             🔒 internal governance (gitignored)
+        ├── PUBLIC_PRIVATE_MAP.md            🔒 internal classification (gitignored)
         ├── .gitignore                       🌐 publishing control
         ├── .mcp.json                        🔒 MCP config
         ├── .claude/
@@ -85,6 +85,7 @@ AI Product Builder/                          ← LOCAL meta-workspace (not a git
         │       ├── prd-lite.md
         │       ├── architecture-overview.md
         │       ├── agent-system-overview.md
+        │       ├── claude-project-context.md
         │       ├── venture-studio-operating-model.md
         │       ├── nutrace-technical-delivery-model.md
         │       ├── repository-structure.md
@@ -99,17 +100,17 @@ AI Product Builder/                          ← LOCAL meta-workspace (not a git
 ## Legend
 
 - 🌐 PUBLIC — tracked by git, visible on GitHub
-- 🔒 PRIVATE — gitignored, local-only
-- 📝 DERIVED — public-safe summary exists; see `PUBLIC_PRIVATE_MAP.md`
+- 🔒 PRIVATE — gitignored or local-only, never pushed
 
-## Why it's shaped this way
+## Privacy model
 
-- The **studio** is local-only because it orchestrates many potential products. Its internals are IP.
-- The **product** is a public repo because the work itself is the portfolio.
-- Both layers share the same governance pattern: `PUBLISHING_POLICY.md` + `PUBLIC_PRIVATE_MAP.md`.
-- The `.claude/` folder follows a "public README, private internals" pattern at both levels.
+- **Operational memory** (`CLAUDE.md`) is private at both levels. It contains session state, agent instructions, and internal context that is not intended for public consumption.
+- **Governance files** (`PUBLISHING_POLICY.md`, `PUBLIC_PRIVATE_MAP.md`) are private at both levels. They encode internal classification criteria and publishing-control logic.
+- **Agent definitions and rules** (`.claude/agents/`, `.claude/rules/`, `.claude/skills/`) are private. They contain the raw operating logic of the agent system.
+- **Public documentation** (`docs/public/`) provides curated, portfolio-safe summaries. These are derived from internal sources but contain no operational memory, prompts, or governance mechanics.
+- The **studio** is entirely local. The **product** exposes only what belongs in a portfolio.
 
 See also:
 - [`ai-product-builder-structure.md`](ai-product-builder-structure.md) — studio directory detail
 - [`nutrace-structure.md`](nutrace-structure.md) — product directory detail
-- [`PUBLISHING_POLICY.md`](../../PUBLISHING_POLICY.md) at the nutrace root
+- [`claude-project-context.md`](claude-project-context.md) — public-safe project context
