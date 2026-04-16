@@ -1,6 +1,6 @@
 # Nutrace — Project Overview
 
-> Elevator pitch + status. Curated public summary derived from [`docs/00-project-charter.md`](../00-project-charter.md).
+> Elevator pitch + status. Curated public summary derived from the internal project charter.
 
 ---
 

@@ -1,6 +1,6 @@
 # Discovery Summary
 
-> Validation methodology and outcomes. Curated public summary derived from [`docs/03-validation-plan-and-results.md`](../03-validation-plan-and-results.md).
+> Validation methodology and outcomes. Curated public summary derived from the internal validation plan and results document.
 
 ---
 
@@ -49,6 +49,6 @@ Gastroenterologists and dietitians across: hospital-affiliated generalists, priv
 
 ## Phase C and D continuation
 
-After H1 + H2 passed, the PRD-Lite ([`docs/04`](../04-prd-lite.md)), UX flows ([`docs/05`](../05-ux-flows-and-wireframes.md)), and technical architecture ([`docs/06`](../06-tech-architecture.md)) encoded these decisions. Phase D runs seven additional validation experiments in build ([`docs/10`](../10-validation-experiments.md)).
+After H1 + H2 passed, the PRD-Lite, UX flows, and technical architecture encoded these decisions. Phase D runs seven additional validation experiments in build.
 
-Full methodology, transcripts, and scoring: [`docs/03-validation-plan-and-results.md`](../03-validation-plan-and-results.md).
+Full methodology, transcripts, and scoring are in internal documentation.

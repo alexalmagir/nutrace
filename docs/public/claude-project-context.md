@@ -17,7 +17,7 @@ Nutrace is built end-to-end using an AI-native product organization: a team of C
 - **Studio layer** — six executive agents (Chief of Staff, Founder, CPO, CTO, CDO, CMO) handle ideation, validation, product definition, architecture, UX, and positioning.
 - **Product layer** — eight technical agents (tech-lead, backend-engineer, frontend-engineer, product-engineer, code-reviewer, refactoring-engineer, qa-engineer, security-engineer) handle day-to-day engineering execution.
 
-Every session produces at least one committed artifact. The build log at [`docs/ai-build-log.md`](../ai-build-log.md) records what was produced, by which agents, in each session.
+Every session produces at least one committed artifact. A session-by-session build log records what was produced, by which agents, in each session. It is maintained as internal documentation.
 
 ## What is publicly visible
 

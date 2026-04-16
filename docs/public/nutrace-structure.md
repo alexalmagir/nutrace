@@ -35,7 +35,7 @@ nutrace/
 │   │   ├── security.md
 │   │   └── delivery.md
 │   └── skills/                            🔒 reusable skills (gitignored)
-├── docs/                                  🌐 full internal docs (already public)
+├── docs/                                  🔒 internal product docs (gitignored)
 │   ├── 00-project-charter.md
 │   ├── 01-founder-venture-brief.md
 │   ├── 02-competitive-analysis.md
@@ -62,7 +62,6 @@ nutrace/
 
 - `README.md`, `LICENSE`, `.gitignore` — visible on GitHub
 - `.claude/README.md`, `.claude/settings.json` — explain the agent system without exposing internals
-- `docs/00`–`docs/10` — full product docs, already publicly pushed (historical decision, preserved)
 - `docs/public/` — curated portfolio-facing summaries
 
 ## What is private
@@ -70,6 +69,7 @@ nutrace/
 - `CLAUDE.md` — operational memory for the agent system (session state, internal context)
 - `PUBLISHING_POLICY.md`, `PUBLIC_PRIVATE_MAP.md` — internal governance and classification criteria
 - `.mcp.json` — MCP server config with token references
+- `docs/00`–`docs/10`, `agent-system.md`, `ai-build-log.md`, `competitive-analysis.md` — internal working documentation
 - `.claude/agents/`, `.claude/rules/`, `.claude/skills/` — raw operating logic
 
 All private files are gitignored. They exist locally but are never pushed to GitHub.
@@ -84,7 +84,6 @@ All private files are gitignored. They exist locally but are never pushed to Git
 6. [`docs/public/architecture-overview.md`](architecture-overview.md) — how it's built
 7. [`docs/public/agent-system-overview.md`](agent-system-overview.md) — the team behind it
 8. [`docs/public/claude-project-context.md`](claude-project-context.md) — project context and privacy model
-9. Optional deep dive: the full `docs/00`–`docs/10` files
 
 See also:
 - [`ai-product-builder-structure.md`](ai-product-builder-structure.md) — the studio above this product

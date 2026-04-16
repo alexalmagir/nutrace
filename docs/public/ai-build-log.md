@@ -1,15 +1,8 @@
 # AI Build Log
 
-> Pointer document. The authoritative, session-by-session build log is maintained at [`docs/ai-build-log.md`](../ai-build-log.md) and is updated at the end of every working session.
+> The session-by-session build log is maintained as internal documentation and updated at the end of every working session.
 
 ---
-
-## Why there are two files
-
-- [`docs/ai-build-log.md`](../ai-build-log.md) — the full log. Every session. All agents involved. What shipped. What didn't. What's next.
-- `docs/public/ai-build-log.md` (this file) — a public-facing entry point. Explains where to look and what to expect.
-
-The full log is the authoritative record of how Nutrace has been built with AI tools. It is already public; this pointer only exists so the `docs/public/` navigation layer is complete.
 
 ## What the build log contains
 
@@ -22,12 +15,12 @@ The full log is the authoritative record of how Nutrace has been built with AI t
 
 ## Why it matters for the portfolio
 
-The log is *process evidence*. It shows:
+The log is process evidence. It shows:
 
 1. How real AI-assisted product work actually happens, including dead ends
 2. How a multi-agent system stays coherent across sessions
 3. The cadence: each session produces a committed artifact, never just a conversation
 
-## Start here
+## Current state
 
-Open [`docs/ai-build-log.md`](../ai-build-log.md) and read the most recent sessions first. Earlier sessions give context on Phase A and Phase B; recent sessions give the current state of Phase D validation experiments.
+Phase D is in progress. Validation experiments E1–E7 are running to test build-time assumptions before committing to full feature delivery. The beta success gate is one clinician's qualitative review of a real patient PDF — that review is the GO/NO-GO for V1.5 investment.

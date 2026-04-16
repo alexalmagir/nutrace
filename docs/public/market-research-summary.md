@@ -1,6 +1,6 @@
 # Market Research Summary
 
-> Curated public summary derived from [`docs/01-founder-venture-brief.md`](../01-founder-venture-brief.md) and [`docs/02-competitive-analysis.md`](../02-competitive-analysis.md).
+> Curated public summary derived from the internal founder venture brief and competitive analysis.
 
 ---
 
@@ -44,4 +44,4 @@
 - Vision AI accuracy on mixed dishes → mitigated by 2-tap correction flow
 - Retention if first insight takes too long → target: ≤3 days to first pattern
 
-Full brief and sources: [`docs/01-founder-venture-brief.md`](../01-founder-venture-brief.md).
+Full brief and sources are in internal documentation.

@@ -28,7 +28,7 @@
 
 ## What to watch next
 
-- **Phase D validation experiments (E1–E7).** If any of them fail, scope has to shrink fast. See [`docs/10-validation-experiments.md`](../10-validation-experiments.md).
+- **Phase D validation experiments (E1–E7).** If any of them fail, scope has to shrink fast. Details are in internal documentation.
 - **Beta success gate:** one clinician's qualitative review of a real patient's PDF. That is the GO/NO-GO for V1.5 investment, not a metric threshold.
 - **Retention at 7 days.** If photo-and-voice capture does not sustain logging, everything downstream collapses. This is the hypothesis the MVP is really testing.
 

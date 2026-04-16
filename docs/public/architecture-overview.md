@@ -1,6 +1,6 @@
 # Architecture Overview
 
-> Curated public summary derived from [`docs/06-tech-architecture.md`](../06-tech-architecture.md) and [`docs/07-implementation-plan.md`](../07-implementation-plan.md).
+> Curated public summary derived from internal technical architecture and implementation plan documents.
 
 ---
 
@@ -83,4 +83,4 @@ MVP algorithm: fires a pattern for a given ingredient when the user has ≥3 day
 
 Beta success gate = one clinician's qualitative review of a real patient's PDF. That review is the GO/NO-GO for V1.5 investment.
 
-Full architecture and implementation plan: [`docs/06-tech-architecture.md`](../06-tech-architecture.md), [`docs/07-implementation-plan.md`](../07-implementation-plan.md).
+Full architecture and implementation plan are in internal documentation.

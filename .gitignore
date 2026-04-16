@@ -25,6 +25,15 @@ PUBLISHING_POLICY.md
 PUBLIC_PRIVATE_MAP.md
 
 # ------------------------------------------------------------------------------
+# PRIVATE: internal product docs
+# Full docs (00-10, build log, etc.) are internal working docs.
+# Only the curated public layer (docs/public/) is tracked.
+# ------------------------------------------------------------------------------
+docs/*
+!docs/public/
+!docs/public/**
+
+# ------------------------------------------------------------------------------
 # PRIVATE: Claude Code operating system
 # Raw agent definitions, operational rules, and reusable skills stay local.
 # Public-facing summaries live in docs/public/.

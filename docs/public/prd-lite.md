@@ -1,6 +1,6 @@
 # PRD-Lite — Public Summary
 
-> Public-safe summary derived from [`docs/04-prd-lite.md`](../04-prd-lite.md). Monetization-sensitive strategy detail is omitted here and remains in the full PRD.
+> Public-safe summary derived from the internal PRD-Lite. Monetization-sensitive strategy detail is omitted here and remains in internal documentation.
 
 ---
 
@@ -47,4 +47,4 @@ Free for patients. HCP-facing subscription considered at V1.5, gated on retentio
 - DiGA reimbursement path in Germany (Phase 3 option, 2026–2027)
 - Patient extended history beyond 90 days (possible low-priority add-on)
 
-Full PRD: [`docs/04-prd-lite.md`](../04-prd-lite.md).
+The full PRD is internal documentation.

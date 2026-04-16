@@ -63,7 +63,7 @@ AI Product Builder/                          ← LOCAL meta-workspace (not a git
         │   │   ├── security.md
         │   │   └── delivery.md
         │   └── skills/                      🔒 reusable operational skills
-        ├── docs/                            🌐 full internal docs (already public)
+        ├── docs/                            🔒 internal product docs (gitignored)
         │   ├── 00-project-charter.md
         │   ├── 01-founder-venture-brief.md
         │   ├── 02-competitive-analysis.md
@@ -107,6 +107,7 @@ AI Product Builder/                          ← LOCAL meta-workspace (not a git
 - **Operational memory** (`CLAUDE.md`) is private at both levels. It contains session state, agent instructions, and internal context that is not intended for public consumption.
 - **Governance files** (`PUBLISHING_POLICY.md`, `PUBLIC_PRIVATE_MAP.md`) are private at both levels. They encode internal classification criteria and publishing-control logic.
 - **Agent definitions and rules** (`.claude/agents/`, `.claude/rules/`, `.claude/skills/`) are private. They contain the raw operating logic of the agent system.
+- **Internal product docs** (`docs/00`–`docs/10`, `ai-build-log.md`, etc.) are gitignored. They contain working documentation used during the build.
 - **Public documentation** (`docs/public/`) provides curated, portfolio-safe summaries. These are derived from internal sources but contain no operational memory, prompts, or governance mechanics.
 - The **studio** is entirely local. The **product** exposes only what belongs in a portfolio.
 

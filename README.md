@@ -98,6 +98,6 @@ See [`docs/public/architecture-overview.md`](docs/public/architecture-overview.m
 
 Built end-to-end in public — product decisions, architecture, code, and launch — by a Senior Technical PM as a demonstration of 0→1 execution with AI tools.
 
-Every doc, decision, and commit is real work, not a tutorial. Session-by-session log: [`docs/ai-build-log.md`](docs/ai-build-log.md).
+Every doc, decision, and commit is real work, not a tutorial. A session-by-session build log is maintained internally.
 
 **GitHub:** [alexalmagir/nutrace](https://github.com/alexalmagir/nutrace) · **Contact:** alex.almagir@gmail.com
