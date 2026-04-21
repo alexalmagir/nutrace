@@ -92,7 +92,7 @@ High-fidelity screens are generated with Figma Make from the prompts in [`assets
 | Flow | Status | Link |
 |---|---|---|
 | Flow 1 — Onboarding | ✅ Done | [Figma Make](https://claim-manage-96224058.figma.site/) |
-| Flow 2 — Meal Log Entry | Pending | — |
+| Flow 2 — Meal Log Entry | ✅ Done | [Figma Make](https://smog-sheen-50549098.figma.site) |
 | Flow 3 — Delayed Symptom Check-in | Pending | — |
 | Flow 4 — Pattern View / My Log | Pending | — |
 | Flow 5 — PDF Export | Pending | — |
