@@ -29,6 +29,9 @@ They complement the written spec in `docs/05-ux-flows-and-wireframes.md` — the
 | Flow 4 — Pattern View (My Log) | Log history with empty state + 2 data states (< 3 days / pattern surfaced) + ingredient toggle + entry detail modal | 3 screens + ingredient view + empty state | [Open in FigJam](https://www.figma.com/online-whiteboard/create-diagram/cd8c2f39-0e99-4b86-b1ac-35dd4514ba68?utm_source=claude&utm_content=edit_in_figjam) |
 | Flow 5 — PDF Export | Export setup (date range, photos, doctor note) → PDF preview → native share OR HCP doctor link | 2 screens + empty state | [Open in FigJam](https://www.figma.com/online-whiteboard/create-diagram/333b571c-d8aa-47f2-aa1b-49f9a094461d?utm_source=claude&utm_content=edit_in_figjam) |
 | Flow 6 — Proactive Trigger Alert Detail | Alert detail: counts only (MVP), inline disclaimer, 3 exit paths | 1 screen + 3 exit paths | [Open in FigJam](https://www.figma.com/online-whiteboard/create-diagram/88581b84-8f1a-4bc0-8809-acb34667312c?utm_source=claude&utm_content=edit_in_figjam) |
+| Flow 7 — Capture Loop *(showcase)* | Narrative arc: camera → AI detection wow → confident save. Derived from Flow 2 (happy path only). | 5 screens | — |
+| Flow 8 — Insight Loop *(showcase)* | Narrative arc: 2h notification → 1-tap check-in → day-3 pattern reveal → user trusts the record. Combines Flow 3 + Flow 4. | 5 screens | — |
+| Flow 9 — Clinical Handoff Loop *(showcase)* | Narrative arc: export setup → polished PDF preview wow → confident doctor share. Derived from Flow 5. | 5 screens | — |
 
 ---
 

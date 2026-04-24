@@ -18,3 +18,6 @@
 | Flow 4 — Pattern View (My Log) | 3 + ingredient view + empty state | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/cd8c2f39-0e99-4b86-b1ac-35dd4514ba68?utm_source=claude&utm_content=edit_in_figjam) | [PNG](../user-flows/flow-4-pattern-view.png) | [Figma Make](https://study-repay-29869810.figma.site/) |
 | Flow 5 — PDF Export | 2 + empty state + HCP share link | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/333b571c-d8aa-47f2-aa1b-49f9a094461d?utm_source=claude&utm_content=edit_in_figjam) | [PNG](../user-flows/flow-5-pdf-export.png) | [Figma Make](https://bobbin-figma-33799790.figma.site/) |
 | Flow 6 — Trigger Alert Detail | 1 + 3 exit paths | [FigJam](https://www.figma.com/online-whiteboard/create-diagram/88581b84-8f1a-4bc0-8809-acb34667312c?utm_source=claude&utm_content=edit_in_figjam) | [PNG](../user-flows/flow-6-trigger-alert-detail.png) | [Figma Make](https://cold-liver-47841772.figma.site/) |
+| Flow 7 — Capture Loop *(showcase)* | 5 screens | — | — | — |
+| Flow 8 — Insight Loop *(showcase)* | 5 screens | — | — | — |
+| Flow 9 — Clinical Handoff Loop *(showcase)* | 5 screens | — | — | — |
