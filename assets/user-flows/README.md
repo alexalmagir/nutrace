@@ -33,6 +33,8 @@ They complement the written spec in `docs/05-ux-flows-and-wireframes.md` — the
 | Flow 8 — Insight Loop *(showcase)* | Narrative arc: 2h notification → 1-tap check-in → day-3 pattern reveal → user trusts the record. Combines Flow 3 + Flow 4. | 5 screens | — |
 | Flow 9 — Clinical Handoff Loop *(showcase)* | Narrative arc: export setup → polished PDF preview wow → confident doctor share. Derived from Flow 5. | 5 screens | — |
 
+> **Showcase note (Flows 7–9):** FigJam diagram links will be added once boards are created. Figma Make prototypes: [Flow 7](https://patio-metal-90671589.figma.site) · [Flow 8](https://snare-drift-10973156.figma.site/) · [Flow 9](https://butter-grass-83569298.figma.site/)
+
 ---
 
 ## App Structure (for reference)
